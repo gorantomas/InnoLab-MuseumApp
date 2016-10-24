@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Station Nr"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_row"
+        android:paddingStart="5dp"/>
+
+    <Button
+        android:text="10 Punkte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_row"
+        android:layout_weight="1"/>
+
+</LinearLayout>
