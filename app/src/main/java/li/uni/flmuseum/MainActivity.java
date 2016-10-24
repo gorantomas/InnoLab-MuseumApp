@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
    public void checkFragen(View view){
-      Button button = (Button) findViewById(R.id.button);
+      Button button = (Button) findViewById(R.id.btoCheckFragen);
       button.setText("Hallo");
      // button.invalidate();
 

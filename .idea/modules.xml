@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FLMuseum.iml" filepath="$PROJECT_DIR$/FLMuseum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InnoLab-MuseumApp.iml" filepath="$PROJECT_DIR$/InnoLab-MuseumApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
