@@ -14,5 +14,33 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Hello World! Hallo"/>
+
+    <Button
+        android:text="Button36585"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/button_newOne"
+        android:layout_width="200dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_newOne"
+        android:layout_toEndOf="@+id/button_newOne"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView2"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_newOne"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/checkBox"/>
 </RelativeLayout>
