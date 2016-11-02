@@ -15,27 +15,34 @@ import java.util.ArrayList;
  * Adapter for listview
  */
 
-public class ResultRowAdapter extends ArrayAdapter<String> implements View.OnClickListener {
+public class ResultRowAdapter extends ArrayAdapter<String> {
 
    ViewHolder viewHolder;
-   ArrayList<String> buttonPoints, stationNames;
-   String station;
+   ArrayList<Boolean> mainQuestion, subQuestion;
+   String station, maxPoints;
+   String[] questionTitle;
+   int actPoints = 0;
+   Context context;
 
    private static class ViewHolder {
       TextView station;
-      Button button;
+      TextView points;
    }
 
-   public ResultRowAdapter(Context context, ArrayList<String> stationName, ArrayList<String> buttonPoints){
-      super(context, 0, stationName);
-      this.stationNames = stationName;
-      this.buttonPoints = buttonPoints;
+   public ResultRowAdapter(Context context, ArrayList<Boolean> mainQuestion, ArrayList<Boolean> subQuestion){
+      super(context, 0, 0);
+      this.context = context;
+      this.mainQuestion = mainQuestion;
+      this.subQuestion = subQuestion;
+
+      questionTitle = context.getResources().getStringArray(R.array.qestions);
+      maxPoints = context.getResources().getString(R.string.maxPoints);
    }
 
    public View getView(int position, View convertView, final ViewGroup parent){
       // Get the data item for this position
       station = getItem(position);
-
+      actPoints = 0;
       // Check if an existing view is being
       // reused, otherwise inflate the view
       //final ViewHolder viewHolder; // view
@@ -45,8 +52,8 @@ public class ResultRowAdapter extends ArrayAdapter<String> implements View.OnCli
          viewHolder = new ViewHolder();
          LayoutInflater inflater = LayoutInflater.from(getContext());
          convertView = inflater.inflate(R.layout.resultlistrow, parent, false);
-         viewHolder.button = (Button) convertView.findViewById(R.id.button_row);
-         viewHolder.station = (TextView) convertView.findViewById(R.id.textView_row);
+         viewHolder.station = (TextView) convertView.findViewById(R.id.row_textView1);
+         viewHolder.points = (TextView) convertView.findViewById(R.id.row_textView2);
          convertView.setTag(viewHolder);
       }
       else
@@ -55,19 +62,19 @@ public class ResultRowAdapter extends ArrayAdapter<String> implements View.OnCli
       }
       // Populate the data into the template
       // view using the data object
-            viewHolder.button.setText(buttonPoints.get(position));
-          viewHolder.station.setText(stationNames.get(position)+position);
-      viewHolder.button.setOnClickListener(this);
+
+      viewHolder.station.setText(questionTitle[position].toString());
+      if(mainQuestion.get(position))
+         actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
+      if(subQuestion.get(position))
+         actPoints += context.getResources().getInteger(R.integer.pointSubQuestion);
+
+      viewHolder.points.setText(actPoints + " von " + maxPoints);
 
       convertView.invalidate();
 
       return convertView;
    }
 
-   @Override public void onClick(View view){
-
-      Button bt = (Button) view;
-      String text = bt.getText().toString();
-   }
 
 }

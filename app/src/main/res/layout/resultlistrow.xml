@@ -7,14 +7,14 @@
         android:text="Station Nr"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/textView_row"
+        android:id="@+id/row_textView1"
         android:paddingStart="5dp"/>
 
-    <Button
-        android:text="10 Punkte"
-        android:layout_width="wrap_content"
+    <TextView
+        android:text="Points"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button_row"
+        android:id="@+id/row_textView2"
         android:layout_weight="1"/>
 
 </LinearLayout>

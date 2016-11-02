@@ -1,11 +1,49 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <!--
+        <item name="android:textColor">@android:color/black</item>
+        -->
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:logo">@android:color/transparent</item>
+
+    </style>
+
+    <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <!--
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle|showCustom</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle|showCustom</item>
+        <item name="customNavigationLayout">@layout/action_bar</item>
+        -->
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <!--        <item name="android:textColor">@android:color/holo_blue_dark</item> -->
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="Divider_invisible">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="tabhost_myStyle"
+           parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

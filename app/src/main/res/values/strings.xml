@@ -6,7 +6,36 @@
     <string name="st2">Station2</string>
     <string name="st3">Station3</string>
     <string name="st4">Station4</string>
+    <string name="st5">Station5</string>
 
+    <integer name="pointMainQuestion">1</integer>
+    <integer name="pointSubQuestion">1</integer>
+    <string name="maxPoints">2</string>
+
+
+    <string-array name="qestions">
+        <item name="quest1">blabla</item>
+        <item name="quest2">blabla</item>
+        <item name="quest3">blabla</item>
+        <item name="quest4">blabla</item>
+        <item name="quest5">blabla</item>
+    </string-array>
+
+
+    <string name="quest1">blabla</string>
+    <string name="subQuest1">blabla</string>
+
+    <string name="quest2">blabla</string>
+    <string name="subQuest2">blabla</string>
+
+    <string name="quest3">blabla</string>
+    <string name="subQuest3">blabla</string>
+
+    <string name="quest4">blabla</string>
+    <string name="subQuest4">blabla</string>
+
+    <string name="quest5">blabla</string>
+    <string name="subQuest5">blabla</string>
 
 
 </resources>
