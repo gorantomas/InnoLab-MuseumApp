@@ -17,35 +17,37 @@ public class Results extends Activity {
    ListView listView;
    ArrayList<Boolean> mainQuestion;
    ArrayList<Boolean> subQuestion;
+   boolean[] b_mainQuestion, b_subQuestion = new boolean[5];
+   String[] questionTitle;
 
    @Override protected void onCreate(Bundle savedInstanceState){
       super.onCreate(savedInstanceState);
       setContentView(R.layout.act_results);
       listView = (ListView) findViewById(R.id.list);
+
+      mainQuestion = new ArrayList<Boolean>();
+      subQuestion = new ArrayList<Boolean>();
+
+      Bundle bundle = getIntent().getExtras();
+      b_mainQuestion = bundle.getBooleanArray("main");
+      b_subQuestion = bundle.getBooleanArray("sub");
+
+      for(int i = 0; i<b_mainQuestion.length; i++)
+      {
+         mainQuestion.add(b_mainQuestion[i]);
+         subQuestion.add(b_subQuestion[i]);
+      }
+
       showResult();
 
    }
 
-   public void setArrays(ArrayList<Boolean> mainQuestion, ArrayList<Boolean> subQuestion){
-      this.mainQuestion = mainQuestion;
-      this.subQuestion = subQuestion;
-
-   }
-
    public void showResult(){
-      ArrayList<String> stationNames = new ArrayList<String>();
-      ArrayList<String> buttonPoints = new ArrayList<String>();
+      questionTitle = getResources().getStringArray(R.array.qestions);
 
-      //      stationNames.add("s1");
-      //      buttonPoints.add("1/10");
-      //      stationNames.add("s1");
-      //      buttonPoints.add("1/10");
-      //      stationNames.add("s1");
-      //      buttonPoints.add("1/10");
-      //      stationNames.add("Gesamt: ");
-      //      buttonPoints.add("3/10");
-           ResultRowAdapter resultRowAdapter = new ResultRowAdapter(this.getBaseContext(), mainQuestion, subQuestion);
-          listView.setAdapter(resultRowAdapter);
+      ResultRowAdapter resultRowAdapter = new ResultRowAdapter(this.getBaseContext(), mainQuestion, subQuestion, questionTitle);
+      listView.setAdapter(resultRowAdapter);
+      listView.invalidate();
    }
 
 }

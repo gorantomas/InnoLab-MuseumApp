@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
 
     <TextView
-        android:text="Willkomen im\nLandesmuseum\nLiechtenstein"
-        android:textSize="32sp"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity = "center"
-        android:id="@+id/textView" />
+        android:gravity="center"
+        android:text="Willkomen im\nLandesmuseum\nLiechtenstein"
+        android:textSize="32sp"/>
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="186dp"
-        app:srcCompat="@drawable/logo2"
-        android:id="@+id/imageView"
-        android:layout_weight="0.63" />
+        android:layout_weight="0.63"
+        android:src="@drawable/logo2"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -26,25 +26,24 @@
         android:layout_weight="0.06">
 
         <RadioButton
-            android:text="Prinzessin"
+            android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:id="@+id/checkBox" />
+            android:text="Prinzessin"/>
+
         <RadioButton
-            android:text="Prinz"
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:id="@+id/checkBox2" />
+            android:text="Prinz"/>
     </RadioGroup>
 
     <Button
-        android:text="Los geht's"
+        android:id="@+id/button_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:onClick="sendMessage"
-        android:elevation="1dp" />
-
+        android:elevation="1dp"
+        android:text="Los geht's"/>
 
 
 </LinearLayout>

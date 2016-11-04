@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Frage 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:id="@+id/textView2"
+        android:textSize="32sp"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:text="Hier steht die Frage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:id="@+id/textView3"
+        android:textSize="23sp"
+        android:paddingTop="50dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:paddingTop="35dp"
+        android:layout_weight="0.27">
+
+        <RadioButton
+            android:text="Antwort 1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/radioButton15" />
+
+        <RadioButton
+            android:text="Antwort 2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/radioButton16" />
+
+        <RadioButton
+            android:text="Antwort 3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/radioButton17" />
+    </RadioGroup>
 
     <Button
-        android:text="Button"
+        android:text="Check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mainQuestNext"/>
-
-    <TextView
-        android:text="Main Question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"/>
 </LinearLayout>

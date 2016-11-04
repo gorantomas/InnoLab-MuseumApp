@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
    ArrayList<Boolean> mainQuestion, subQuestion;
    String station, maxPoints;
    String[] questionTitle;
-   int actPoints = 0;
+   int actPoints = 0, allPoints = 0, maxAllPoints = 0;
    Context context;
 
    private static class ViewHolder {
@@ -29,24 +28,21 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
       TextView points;
    }
 
-   public ResultRowAdapter(Context context, ArrayList<Boolean> mainQuestion, ArrayList<Boolean> subQuestion){
-      super(context, 0, 0);
+   public ResultRowAdapter(Context context, ArrayList<Boolean> mainQuestion, ArrayList<Boolean> subQuestion, String[] questionTitle){
+      super(context, 0, questionTitle);
       this.context = context;
       this.mainQuestion = mainQuestion;
       this.subQuestion = subQuestion;
-
-      questionTitle = context.getResources().getStringArray(R.array.qestions);
+      this.questionTitle = questionTitle;
       maxPoints = context.getResources().getString(R.string.maxPoints);
+      maxAllPoints = context.getResources().getInteger(R.integer.pointMainQuestion) * mainQuestion.size() * 2;
    }
 
    public View getView(int position, View convertView, final ViewGroup parent){
       // Get the data item for this position
       station = getItem(position);
       actPoints = 0;
-      // Check if an existing view is being
-      // reused, otherwise inflate the view
-      //final ViewHolder viewHolder; // view
-      // lookup cache stored in tag
+
       if(convertView == null)
       {
          viewHolder = new ViewHolder();
@@ -64,17 +60,23 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
       // view using the data object
 
       viewHolder.station.setText(questionTitle[position].toString());
-      if(mainQuestion.get(position))
-         actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
-      if(subQuestion.get(position))
-         actPoints += context.getResources().getInteger(R.integer.pointSubQuestion);
 
-      viewHolder.points.setText(actPoints + " von " + maxPoints);
+      if(position<mainQuestion.size())
+      {
+         if(mainQuestion.get(position))
+            actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
+         if(subQuestion.get(position))
+            actPoints += context.getResources().getInteger(R.integer.pointSubQuestion);
+
+         allPoints += actPoints;
+         viewHolder.points.setText(actPoints + " von " + maxPoints);
+      }
+      else
+         viewHolder.points.setText(allPoints + " von " + maxAllPoints);
 
       convertView.invalidate();
 
       return convertView;
    }
-
 
 }

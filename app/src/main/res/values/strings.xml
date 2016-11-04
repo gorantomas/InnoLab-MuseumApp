@@ -14,11 +14,12 @@
 
 
     <string-array name="qestions">
-        <item name="quest1">blabla</item>
-        <item name="quest2">blabla</item>
-        <item name="quest3">blabla</item>
-        <item name="quest4">blabla</item>
-        <item name="quest5">blabla</item>
+        <item name="quest1">frage 1</item>
+        <item name="quest2">frage 2</item>
+        <item name="quest3">frage 3</item>
+        <item name="quest4">frage 4</item>
+        <item name="quest5">frage 5</item>
+        <item name="sum">Summe:</item>
     </string-array>
 
 

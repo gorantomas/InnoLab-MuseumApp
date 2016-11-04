@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -14,8 +16,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
    SharedPreferences settings;
    SharedPreferences.Editor editor;
    ArrayList<Boolean> mainQuestion, subQuestion;
+   boolean[] b_mainQuestion, b_subQuestion;
    int curQuestion = -1;
    Button routeNext, mainquestNext, subquestNext;
+   TextView tv_mainQuest, tv_subQuest;
 
    @Override protected void onCreate(Bundle savedInstanceState){
       super.onCreate(savedInstanceState);
@@ -26,26 +30,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
       mainQuestion = new ArrayList<Boolean>();
       subQuestion = new ArrayList<Boolean>();
+      b_mainQuestion = new boolean[5];
+      b_subQuestion = new boolean[5];
 
       routeNext = (Button) findViewById(R.id.routeNext);
       routeNext.setOnClickListener(this);
       curQuestion = 10;
-      routeNext.setText("next" + curQuestion);
+      routeNext.setText("next" + (curQuestion / 10));
    }
 
-   //   public void checkFragen(View view){
-   //      Button button = (Button) findViewById(R.id.btoCheckFragen);
-   //      button.setText(getString(R.string.st1));
-   //      editor.putBoolean("b1",true);
-   //      editor.apply();
-   //
-   //      boolean bb = settings.getBoolean("b1",false);
-   //
-   //     // button.invalidate();
-   //      Intent myIntent = new Intent(this, Results.class);
-   //      startActivity(myIntent);
-   //
-   //   }
 
    private void switchRoute(int route){
       switch(route)
@@ -58,34 +51,35 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setContentView(R.layout.act_route);
             routeNext = (Button) findViewById(R.id.routeNext);
             routeNext.setOnClickListener(this);
-            routeNext.setText("next" + route);
+
+            routeNext.setText("next" + (route / 10));
             break;
          case 20:
             setContentView(R.layout.act_route);
             routeNext = (Button) findViewById(R.id.routeNext);
             routeNext.setOnClickListener(this);
-            routeNext.setText("next" + route);
+            routeNext.setText("next" + (route / 10));
             curQuestion = 20;
             break;
          case 30:
             setContentView(R.layout.act_route);
             routeNext = (Button) findViewById(R.id.routeNext);
             routeNext.setOnClickListener(this);
-            routeNext.setText("next" + route);
+            routeNext.setText("next" + (route / 10));
             curQuestion = 30;
             break;
          case 40:
             setContentView(R.layout.act_route);
             routeNext = (Button) findViewById(R.id.routeNext);
             routeNext.setOnClickListener(this);
-            routeNext.setText("next" + route);
+            routeNext.setText("next" + (route / 10));
             curQuestion = 40;
             break;
          case 50:
             setContentView(R.layout.act_route);
             routeNext = (Button) findViewById(R.id.routeNext);
             routeNext.setOnClickListener(this);
-            routeNext.setText("next" + route);
+            routeNext.setText("next" + (route / 10));
             curQuestion = 50;
             break;
          case 60:
@@ -109,7 +103,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             curQuestion = 10;
             mainquestNext = (Button) findViewById(R.id.mainQuestNext);
             mainquestNext.setOnClickListener(this);
-            mainquestNext.setText("main" + question);
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest = (TextView) findViewById(R.id.textView2);
+            tv_mainQuest.setText("Frage " + (question / 10));
             break;
          case 11:
             setContentView(R.layout.act_subquestion);
@@ -117,13 +113,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             subquestNext = (Button) findViewById(R.id.subQuestNext);
             subquestNext.setOnClickListener(this);
             subquestNext.setText("sub" + question);
+            tv_subQuest = (TextView) findViewById(R.id.textView2);
+            tv_subQuest.setText("UnterFrage " + question);
             break;
          case 20:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 20;
             mainquestNext = (Button) findViewById(R.id.mainQuestNext);
             mainquestNext.setOnClickListener(this);
-            mainquestNext.setText("main" + question);
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest = (TextView) findViewById(R.id.textView2);
+            tv_mainQuest.setText("Frage " + (question / 10));
             break;
          case 21:
             setContentView(R.layout.act_subquestion);
@@ -131,13 +131,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             subquestNext = (Button) findViewById(R.id.subQuestNext);
             subquestNext.setOnClickListener(this);
             subquestNext.setText("sub" + question);
+            tv_subQuest = (TextView) findViewById(R.id.textView2);
+            tv_subQuest.setText("UnterFrage " + question);
             break;
          case 30:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 30;
             mainquestNext = (Button) findViewById(R.id.mainQuestNext);
             mainquestNext.setOnClickListener(this);
-            mainquestNext.setText("main" + question);
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest = (TextView) findViewById(R.id.textView2);
+            tv_mainQuest.setText("Frage " + (question / 10));
             break;
          case 31:
             setContentView(R.layout.act_subquestion);
@@ -145,13 +149,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             subquestNext = (Button) findViewById(R.id.subQuestNext);
             subquestNext.setOnClickListener(this);
             subquestNext.setText("sub" + question);
+            tv_subQuest = (TextView) findViewById(R.id.textView2);
+            tv_subQuest.setText("UnterFrage " + question);
             break;
          case 40:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 40;
             mainquestNext = (Button) findViewById(R.id.mainQuestNext);
             mainquestNext.setOnClickListener(this);
-            mainquestNext.setText("main" + question);
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest = (TextView) findViewById(R.id.textView2);
+            tv_mainQuest.setText("Frage " + (question / 10));
             break;
          case 41:
             setContentView(R.layout.act_subquestion);
@@ -159,13 +167,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             subquestNext = (Button) findViewById(R.id.subQuestNext);
             subquestNext.setOnClickListener(this);
             subquestNext.setText("sub" + question);
+            tv_subQuest = (TextView) findViewById(R.id.textView2);
+            tv_subQuest.setText("UnterFrage " + question);
             break;
          case 50:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 50;
             mainquestNext = (Button) findViewById(R.id.mainQuestNext);
             mainquestNext.setOnClickListener(this);
-            mainquestNext.setText("main" + question);
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest = (TextView) findViewById(R.id.textView2);
+            tv_mainQuest.setText("Frage " + (question / 10));
             break;
          case 51:
             setContentView(R.layout.act_subquestion);
@@ -173,6 +185,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
             subquestNext = (Button) findViewById(R.id.subQuestNext);
             subquestNext.setOnClickListener(this);
             subquestNext.setText("sub" + question);
+            tv_subQuest = (TextView) findViewById(R.id.textView2);
+            tv_subQuest.setText("UnterFrage " + question);
             break;
 
          default:
@@ -184,10 +198,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
    private void showResult(){
 
       Intent myIntent = new Intent(this, Results.class);
+      myIntent.putExtra("main", b_mainQuestion);
+      myIntent.putExtra("sub", b_subQuestion);
 
       startActivity(myIntent);
-      Results results = new Results();
-      results.setArrays(mainQuestion, subQuestion);
    }
 
    public void onClick(View view){
@@ -224,43 +238,53 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 10:
             //if radiobutton(1).checked
             mainQuestion.add(0, true);
+            b_mainQuestion[0] = true;
             //else set false
             switchQuestion(11);
             break;
          case 11:
             subQuestion.add(0, false);
+            b_subQuestion[0] = false;
             switchRoute(20);
             break;
          case 20:
             mainQuestion.add(1, true);
+            b_mainQuestion[1] = true;
             switchQuestion(21);
             break;
          case 21:
             subQuestion.add(1, false);
+            b_subQuestion[1] = true;
             switchRoute(30);
             break;
          case 30:
             mainQuestion.add(2, true);
+            b_mainQuestion[2] = true;
             switchQuestion(31);
             break;
          case 31:
             subQuestion.add(2, false);
+            b_subQuestion[2] = true;
             switchRoute(40);
             break;
          case 40:
             mainQuestion.add(3, true);
+            b_mainQuestion[3] = true;
             switchQuestion(41);
             break;
          case 41:
             subQuestion.add(3, false);
+            b_subQuestion[3] = false;
             switchRoute(50);
             break;
          case 50:
             mainQuestion.add(4, true);
+            b_mainQuestion[4] = true;
             switchQuestion(51);
             break;
          case 51:
             subQuestion.add(4, false);
+            b_subQuestion[4] = true;
             switchRoute(60);
             break;
 

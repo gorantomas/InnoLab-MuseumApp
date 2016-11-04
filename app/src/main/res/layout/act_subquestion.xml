@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Frage 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:id="@+id/textView2"
+        android:textSize="32sp"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:text="Hier steht die Unterfrage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:id="@+id/textView3"
+        android:textSize="23sp"
+        android:paddingTop="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Hier wird die Antwort eingegeben."
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="0.64" />
 
     <Button
-        android:text="Button"
+        android:text="Check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/subQuestNext"/>
 
-    <TextView
-        android:text="Sub Question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"/>
+
 </LinearLayout>
