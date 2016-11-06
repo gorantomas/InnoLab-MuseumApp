@@ -1,55 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="vertical"
+              android:weightSum="1">
 
     <TextView
-        android:text="Frage 1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity = "center"
         android:id="@+id/textView2"
-        android:textSize="32sp"
-        android:paddingTop="30dp" />
-
-    <TextView
-        android:text="Hier steht die Frage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity = "center"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="Frage 1"
+        android:textSize="32sp"/>
+
+    <TextView
         android:id="@+id/textView3"
-        android:textSize="23sp"
-        android:paddingTop="50dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="Hier steht die Frage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
+        android:textSize="23sp"/>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="152dp"
-        android:paddingTop="35dp"
-        android:layout_weight="0.27">
+        android:layout_weight="0.27"
 
-        <RadioButton
-            android:text="Antwort 1"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:id="@+id/radioButton15" />
+        android:paddingTop="35dp">
 
-        <RadioButton
-            android:text="Antwort 2"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:id="@+id/radioButton16" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
 
-        <RadioButton
-            android:text="Antwort 3"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:id="@+id/radioButton17" />
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:text="Antwort 1"/>
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Antwort 3"
+                android:layout_below="@+id/radioButton16"
+                android:layout_alignParentStart="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Antwort 2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton17"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Antwort 4"
+                android:layout_below="@+id/radioButton16"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
     </RadioGroup>
 
     <Button
-        android:text="Check"
+        android:id="@+id/mainQuestNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mainQuestNext"/>
+        android:text="Check"/>
 </LinearLayout>
