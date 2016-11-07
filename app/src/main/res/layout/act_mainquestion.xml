@@ -7,22 +7,20 @@
               android:weightSum="1">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="30dp"
-        android:text="Frage 1"
-        android:textSize="32sp"/>
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="50dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/rounded_corner2"
         android:text="Hier steht die Frage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
-        android:textSize="23sp"/>
+        android:textSize="23sp"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="20dp" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -40,33 +38,55 @@
                 android:id="@+id/radioButton15"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:background="@drawable/rounded_corner"
+                android:button="@null"
                 android:layout_alignParentTop="true"
-                android:text="Antwort 1"/>
+                android:text="Antwort 1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="20dp" />
 
             <RadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:text="Antwort 3"
+                android:background="@drawable/rounded_corner"
+                android:button="@null"
                 android:layout_below="@+id/radioButton16"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
 
             <RadioButton
                 android:id="@+id/radioButton16"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:background="@drawable/rounded_corner"
+                android:button="@null"
                 android:layout_weight="1"
                 android:text="Antwort 2"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginRight="20dp" />
 
             <RadioButton
                 android:id="@+id/radioButton17"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:background="@drawable/rounded_corner"
+                android:button="@null"
                 android:text="Antwort 4"
                 android:layout_below="@+id/radioButton16"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp" />
 
         </RelativeLayout>
 
@@ -74,7 +94,9 @@
 
     <Button
         android:id="@+id/mainQuestNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check"/>
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:background="@drawable/arrow_right"
+        android:text="Weiter"
+        android:layout_weight="0.15" />
 </LinearLayout>
