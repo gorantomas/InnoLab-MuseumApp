@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:baselineAligned="false"
@@ -22,12 +22,26 @@
         android:paddingRight="5dp"
         android:layout_marginTop="20dp" />
 
+    <Button
+        android:id="@+id/mainQuestNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right"
+        android:text="Weiter"
+        android:layout_weight="0.15"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"/>
+
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="152dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.27"
 
-        android:paddingTop="35dp">
+        android:paddingTop="35dp"
+        android:layout_above="@+id/mainQuestNext"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="35dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -91,12 +105,4 @@
         </RelativeLayout>
 
     </RadioGroup>
-
-    <Button
-        android:id="@+id/mainQuestNext"
-        android:layout_width="70dp"
-        android:layout_height="28dp"
-        android:background="@drawable/arrow_right"
-        android:text="Weiter"
-        android:layout_weight="0.15" />
-</LinearLayout>
+</RelativeLayout>
