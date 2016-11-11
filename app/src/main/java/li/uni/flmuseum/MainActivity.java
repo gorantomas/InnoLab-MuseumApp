@@ -329,7 +329,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
    private void setTitleQuestion(){
       questionCounter += 1;
-      setTitle("Frage " + questionCounter + " von 12");
+      setTitle("Frage " + questionCounter + " von 10");
    }
 
 }

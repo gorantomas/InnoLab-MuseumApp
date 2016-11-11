@@ -61,7 +61,7 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
 
       viewHolder.station.setText(questionTitle[position].toString());
 
-      if(position<mainQuestion.size())
+      if(position<(mainQuestion.size()-1))
       {
          if(mainQuestion.get(position))
             actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
@@ -71,6 +71,8 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
          allPoints += actPoints;
          viewHolder.points.setText(actPoints + " von " + maxPoints);
       }
+      else if(position==(mainQuestion.size()))
+         viewHolder.points.setText("");
       else
          viewHolder.points.setText(allPoints + " von " + maxAllPoints);
 

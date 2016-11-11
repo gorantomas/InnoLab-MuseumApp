@@ -49,11 +49,11 @@
             android:padding="5dp">
 
             <RadioButton
-                android:id="@+id/radioButton15"
+                android:id="@+id/rB1"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:background="@drawable/rounded_corner"
-                android:button="@null"
+                android:background="@drawable/radiobuttonstyle"
+                android:button="@android:color/transparent"
                 android:layout_alignParentTop="true"
                 android:text="Antwort 1"
                 android:paddingLeft="15dp"
@@ -61,13 +61,13 @@
                 android:layout_marginLeft="20dp" />
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rB3"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:text="Antwort 3"
-                android:background="@drawable/rounded_corner"
-                android:button="@null"
-                android:layout_below="@+id/radioButton16"
+                android:background="@drawable/radiobuttonstyle"
+                android:button="@android:color/transparent"
+                android:layout_below="@+id/rB2"
                 android:layout_alignParentStart="true"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -75,11 +75,11 @@
                 android:layout_marginLeft="20dp" />
 
             <RadioButton
-                android:id="@+id/radioButton16"
+                android:id="@+id/rB2"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:background="@drawable/rounded_corner"
-                android:button="@null"
+                android:background="@drawable/radiobuttonstyle"
+                android:button="@android:color/transparent"
                 android:layout_weight="1"
                 android:text="Antwort 2"
                 android:layout_alignParentTop="true"
@@ -89,13 +89,13 @@
                 android:layout_marginRight="20dp" />
 
             <RadioButton
-                android:id="@+id/radioButton17"
+                android:id="@+id/rB4"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:background="@drawable/rounded_corner"
-                android:button="@null"
+                android:background="@drawable/radiobuttonstyle"
+                android:button="@android:color/transparent"
                 android:text="Antwort 4"
-                android:layout_below="@+id/radioButton16"
+                android:layout_below="@+id/rB2"
                 android:layout_alignParentEnd="true"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"

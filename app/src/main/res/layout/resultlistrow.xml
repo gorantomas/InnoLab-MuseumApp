@@ -8,13 +8,20 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/row_textView1"
-        android:paddingStart="5dp"/>
+        android:paddingStart="5dp"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"/>
 
     <TextView
         android:text="Points"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/row_textView2"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"/>
 
 </LinearLayout>

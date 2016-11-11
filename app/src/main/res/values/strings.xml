@@ -19,6 +19,7 @@
         <item name="quest3">frage 3</item>
         <item name="quest4">frage 4</item>
         <item name="quest5">frage 5</item>
+        <item name="sum-"> </item>
         <item name="sum">Summe:</item>
     </string-array>
 

@@ -23,10 +23,10 @@ public class CheckAnswer {
 
    private void findButtons(Activity activity){
 
-      rb1 = (RadioButton) activity.findViewById(R.id.radioButton15);
-      rb2 = (RadioButton) activity.findViewById(R.id.radioButton15);
-      rb3 = (RadioButton) activity.findViewById(R.id.radioButton15);
-      rb4 = (RadioButton) activity.findViewById(R.id.radioButton15);
+      rb1 = (RadioButton) activity.findViewById(R.id.rB1);
+      rb2 = (RadioButton) activity.findViewById(R.id.rB1);
+      rb3 = (RadioButton) activity.findViewById(R.id.rB1);
+      rb4 = (RadioButton) activity.findViewById(R.id.rB1);
    }
 
    private void findVariables(Activity activity){
