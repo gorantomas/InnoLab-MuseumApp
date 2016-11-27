@@ -18,11 +18,8 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:paddingTop="15dp"
-        android:text="Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? "
-        android:textSize="23sp"/>
+        android:text="Hier steht die Unterfrage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
+        android:textSize="24sp"/>
 
     <Button
         android:id="@+id/subQuestNext"
@@ -42,11 +39,11 @@
         android:layout_alignStart="@+id/textView3"
         android:layout_marginBottom="24dp"
         android:inputType="textPersonName"
-        android:text="Hier wird die Antwort eingegeben."
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:layout_alignEnd="@+id/textView3"
-        android:paddingBottom="35dp"/>
+        android:paddingBottom="35dp"
+        android:hint="Hier wird die Antwort eingegeben."/>
 
 
 </RelativeLayout>

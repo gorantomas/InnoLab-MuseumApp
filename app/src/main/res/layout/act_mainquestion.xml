@@ -14,7 +14,7 @@
         android:paddingTop="15dp"
         android:background="@drawable/rounded_corner2"
         android:text="@string/quest1"
-        android:textSize="23sp"
+        android:textSize="24sp"
         android:paddingBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

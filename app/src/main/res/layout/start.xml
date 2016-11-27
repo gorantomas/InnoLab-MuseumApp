@@ -45,7 +45,6 @@
         android:backgroundTint="@android:color/darker_gray"
         android:backgroundTintMode="screen"
         android:ems="10"
-        android:focusable="true"
         android:inputType="textPersonName"
         android:text="Name: "
         android:textColorHint="@android:color/darker_gray"/>
