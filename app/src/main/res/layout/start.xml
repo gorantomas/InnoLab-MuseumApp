@@ -29,19 +29,32 @@
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="Prinzessin"/>
+            android:text="@string/frau"/>
 
         <RadioButton
             android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="Prinz"/>
+            android:text="@string/mann"/>
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:backgroundTintMode="screen"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="Name: "
+        android:textColorHint="@android:color/darker_gray"/>
 
     <Button
         android:id="@+id/button_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:elevation="1dp"
         android:text="Los geht's"/>
 

@@ -13,14 +13,15 @@
         android:gravity="center"
         android:paddingTop="15dp"
         android:background="@drawable/rounded_corner2"
-        android:text="Hier steht die Frage: Ich wünschte mir ein Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen, der nicht auffällt, aber das Echte glänzen lässt.? "
+        android:text="@string/quest1"
         android:textSize="23sp"
         android:paddingBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        />
 
     <Button
         android:id="@+id/mainQuestNext"

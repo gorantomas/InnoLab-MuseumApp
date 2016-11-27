@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'AndroidKey'
+            keyPassword 'gorannini'
+            storeFile file('C:/Users/goran.tomas/Documents/Android Projects/key.jks')
+            storePassword 'gorannini'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion '21.1.2'
     defaultConfig {
@@ -23,7 +31,6 @@ android {
             jniDebuggable true
         }
     }
-
     productFlavors {
         prod {
             applicationId "li.uni.flmuseum"
@@ -42,7 +49,6 @@ android {
             testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
         }
     }
-
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def project = "FLMuseum"
@@ -58,8 +64,6 @@ android {
             output.outputFile = new File(output.outputFile.parent, newApkName)
         }
     }
-
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7

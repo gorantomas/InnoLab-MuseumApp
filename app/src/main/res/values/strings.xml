@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">FLMuseum</string>
+    <string name="mann">Forscher</string>
+    <string name="frau">Forscherin</string>
 
     <!-- Fragenüberschriften -->
     <string name="st1">Station1</string>
@@ -24,20 +26,85 @@
     </string-array>
 
 
-    <string name="quest1">blabla</string>
-    <string name="subQuest1">blabla</string>
+    <string name="quest1">Hier steht die Frage: Ich wünschte mir ein
+        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
+        der nicht auffällt, aber das Echte glänzen lässt.? </string>
+    <string-array name="guest1answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
 
-    <string name="quest2">blabla</string>
-    <string name="subQuest2">blabla</string>
+    <string name="subQuest1">Hier steht die Unterfrage:
+        Ich wünschte mir ein Bild zu sein, das ohne
+        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
+        aber das Echte glänzen lässt.? </string>
+    <string name="subQuest1answer">word</string>
 
-    <string name="quest3">blabla</string>
-    <string name="subQuest3">blabla</string>
+    <string name="quest2">Hier steht die Frage: Ich wünschte mir ein
+        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
+        der nicht auffällt, aber das Echte glänzen lässt.? </string>
+    <string-array name="guest2answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
 
-    <string name="quest4">blabla</string>
-    <string name="subQuest4">blabla</string>
+    <string name="subQuest2">Hier steht die Unterfrage:
+        Ich wünschte mir ein Bild zu sein, das ohne
+        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
+        aber das Echte glänzen lässt.? </string>
+    <string name="subQuest2answer">word</string>
 
-    <string name="quest5">blabla</string>
-    <string name="subQuest5">blabla</string>
+    <string name="quest3">Hier steht die Frage: Ich wünschte mir ein
+        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
+        der nicht auffällt, aber das Echte glänzen lässt.? </string>
+    <string-array name="guest3answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+
+    <string name="subQuest3">Hier steht die Unterfrage:
+        Ich wünschte mir ein Bild zu sein, das ohne
+        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
+        aber das Echte glänzen lässt.? </string>
+    <string name="subQuest3answer">word</string>
+
+    <string name="quest4">Hier steht die Frage: Ich wünschte mir ein
+        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
+        der nicht auffällt, aber das Echte glänzen lässt.? </string>
+    <string-array name="guest4answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+
+    <string name="subQuest4">Hier steht die Unterfrage:
+        Ich wünschte mir ein Bild zu sein, das ohne
+        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
+        aber das Echte glänzen lässt.? </string>
+    <string name="subQuest4answer">word</string>
+
+    <string name="quest5">Hier steht die Frage: Ich wünschte mir ein
+        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
+        der nicht auffällt, aber das Echte glänzen lässt.? </string>
+    <string-array name="guest5answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+
+    <string name="subQuest5">Hier steht die Unterfrage:
+        Ich wünschte mir ein Bild zu sein, das ohne
+        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
+        aber das Echte glänzen lässt.? </string>
+    <string name="subQuest5answer">word</string>
 
 
 </resources>

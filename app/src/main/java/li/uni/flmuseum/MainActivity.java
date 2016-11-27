@@ -3,9 +3,11 @@ package li.uni.flmuseum;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,8 +21,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
    int curQuestion = -1;
    int questionCounter = 0;
    Button routeNext, mainquestNext, subquestNext;
+   RadioButton[] radioButtons;
+   String[] mainQuestAnswers;
    TextView tv_mainQuest, tv_subQuest;
    CheckAnswer checkAnswer;
+   Resources res;
 
    @Override protected void onCreate(Bundle savedInstanceState){
       super.onCreate(savedInstanceState);
@@ -35,7 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
       subQuestion = new ArrayList<Boolean>();
       b_mainQuestion = new boolean[5];
       b_subQuestion = new boolean[5];
-
+      res = getResources();
       routeNext = (Button) findViewById(R.id.routeNext);
       routeNext.setOnClickListener(this);
       curQuestion = 10;
@@ -108,18 +113,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 10:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 10;
-            mainquestNext = (Button) findViewById(R.id.mainQuestNext);
-            mainquestNext.setOnClickListener(this);
+            //set variables
+            setMainQuestionVariables();
+            mainQuestAnswers = res.getStringArray(R.array.guest1answers);
+            for(int i = 0; i<radioButtons.length; i++)
+            {
+               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            }
             mainquestNext.setText("main" + (question / 10));
-            //            tv_mainQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_mainQuest.setText("Frage " + (question / 10));
-
+            tv_mainQuest.setText(getString(R.string.quest1));
             break;
          case 11:
             setContentView(R.layout.act_subquestion);
             curQuestion = 11;
-            subquestNext = (Button) findViewById(R.id.subQuestNext);
-            subquestNext.setOnClickListener(this);
+            //set variables
+            setSubQuestionVariables();
             subquestNext.setText("sub" + question);
 
             //            tv_subQuest = (TextView) findViewById(R.id.textView2);
@@ -128,18 +136,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 20:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 20;
-            mainquestNext = (Button) findViewById(R.id.mainQuestNext);
-            mainquestNext.setOnClickListener(this);
+            //set variables
+            setMainQuestionVariables();
+            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            for(int i = 0; i<radioButtons.length; i++)
+            {
+               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            }
             mainquestNext.setText("main" + (question / 10));
-
-            //            tv_mainQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_mainQuest.setText("Frage " + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest2));
             break;
          case 21:
             setContentView(R.layout.act_subquestion);
             curQuestion = 21;
-            subquestNext = (Button) findViewById(R.id.subQuestNext);
-            subquestNext.setOnClickListener(this);
+            //set variables
+            setSubQuestionVariables();
             subquestNext.setText("sub" + question);
 
             //            tv_subQuest = (TextView) findViewById(R.id.textView2);
@@ -148,18 +159,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 30:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 30;
-            mainquestNext = (Button) findViewById(R.id.mainQuestNext);
-            mainquestNext.setOnClickListener(this);
+            //set variables
+            setMainQuestionVariables();
+            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            for(int i = 0; i<radioButtons.length; i++)
+            {
+               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            }
             mainquestNext.setText("main" + (question / 10));
-
-            //            tv_mainQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_mainQuest.setText("Frage " + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest3));
             break;
          case 31:
             setContentView(R.layout.act_subquestion);
             curQuestion = 31;
-            subquestNext = (Button) findViewById(R.id.subQuestNext);
-            subquestNext.setOnClickListener(this);
+            //set variables
+            setSubQuestionVariables();
             subquestNext.setText("sub" + question);
 
             //            tv_subQuest = (TextView) findViewById(R.id.textView2);
@@ -168,17 +182,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 40:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 40;
-            mainquestNext = (Button) findViewById(R.id.mainQuestNext);
-            mainquestNext.setOnClickListener(this);
+            //set variables
+            setMainQuestionVariables();
+            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            for(int i = 0; i<radioButtons.length; i++)
+            {
+               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            }
             mainquestNext.setText("main" + (question / 10));
-            //            tv_mainQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_mainQuest.setText("Frage " + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest4));
             break;
          case 41:
             setContentView(R.layout.act_subquestion);
             curQuestion = 41;
-            subquestNext = (Button) findViewById(R.id.subQuestNext);
-            subquestNext.setOnClickListener(this);
+            //set variables
+            setSubQuestionVariables();
             subquestNext.setText("sub" + question);
             //            tv_subQuest = (TextView) findViewById(R.id.textView2);
             //            tv_subQuest.setText("UnterFrage " + question);
@@ -186,17 +204,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
          case 50:
             setContentView(R.layout.act_mainquestion);
             curQuestion = 50;
-            mainquestNext = (Button) findViewById(R.id.mainQuestNext);
-            mainquestNext.setOnClickListener(this);
+            //set variables
+            setMainQuestionVariables();
+            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            for(int i = 0; i<radioButtons.length; i++)
+            {
+               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            }
             mainquestNext.setText("main" + (question / 10));
-            //            tv_mainQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_mainQuest.setText("Frage " + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest5));
             break;
          case 51:
             setContentView(R.layout.act_subquestion);
             curQuestion = 51;
-            subquestNext = (Button) findViewById(R.id.subQuestNext);
-            subquestNext.setOnClickListener(this);
+            //set variables
+            setSubQuestionVariables();
             subquestNext.setText("sub" + question);
             //            tv_subQuest = (TextView) findViewById(R.id.textView2);
             //            tv_subQuest.setText("UnterFrage " + question);
@@ -218,10 +240,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
    }
 
    public void onClick(View view){
-
       switch(view.getId())
       {
-
          case R.id.mainQuestNext:
          /*
          beim beantworten der Frage wird überprüft ob die Antwort richtig ist.
@@ -230,15 +250,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
           */
             checkAnswer(curQuestion);
             break;
-
          case R.id.subQuestNext:
             checkAnswer(curQuestion);
             break;
-
          case R.id.routeNext:
             switchQuestion(curQuestion);
             break;
-
          default:
             break;
       }
@@ -330,6 +347,25 @@ public class MainActivity extends Activity implements View.OnClickListener {
    private void setTitleQuestion(){
       questionCounter += 1;
       setTitle("Frage " + questionCounter + " von 10");
+   }
+
+   private void setMainQuestionVariables(){
+      mainquestNext = (Button) findViewById(R.id.mainQuestNext);
+      mainquestNext.setOnClickListener(this);
+      tv_mainQuest = (TextView) findViewById(R.id.textView3);
+      mainQuestAnswers = new String[4];
+      radioButtons = new RadioButton[4];
+      for(int i = 0; i<radioButtons.length; i++)
+      {
+         String b = "rB" + (i+1);
+         radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
+      }
+   }
+
+   private void setSubQuestionVariables(){
+      subquestNext = (Button) findViewById(R.id.subQuestNext);
+      subquestNext.setOnClickListener(this);
+
    }
 
 }
