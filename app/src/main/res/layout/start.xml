@@ -23,31 +23,46 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="92dp"
-        android:layout_weight="0.06">
+        android:layout_weight="0.06"
+        android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/checkBox"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:id="@+id/checkBoxFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
             android:text="@string/frau"/>
 
         <RadioButton
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:id="@+id/checkBoxMale"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
             android:text="@string/mann"/>
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/editText2"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:backgroundTintMode="screen"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name: "
-        android:textColorHint="@android:color/darker_gray"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Name:"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:backgroundTintMode="screen"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:textColorHint="@android:color/darker_gray"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_start"
@@ -55,7 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:elevation="1dp"
-        android:text="Los geht's"/>
+        android:text="Los geht's"
+        android:visibility="invisible"/>
 
 
 </LinearLayout>

@@ -35,6 +35,7 @@
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
+    <integer name="quest1rightanswer">1</integer>
 
     <string name="subQuest1">Hier steht die Unterfrage:
         Ich wünschte mir ein Bild zu sein, das ohne
@@ -51,6 +52,7 @@
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
+    <integer name="quest2rightanswer">1</integer>
 
     <string name="subQuest2">Hier steht die Unterfrage:
         Ich wünschte mir ein Bild zu sein, das ohne
@@ -67,6 +69,7 @@
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
+    <integer name="quest3rightanswer">1</integer>
 
     <string name="subQuest3">Hier steht die Unterfrage:
         Ich wünschte mir ein Bild zu sein, das ohne
@@ -83,6 +86,7 @@
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
+    <integer name="quest4rightanswer">1</integer>
 
     <string name="subQuest4">Hier steht die Unterfrage:
         Ich wünschte mir ein Bild zu sein, das ohne
@@ -99,6 +103,7 @@
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
+    <integer name="quest5rightanswer">1</integer>
 
     <string name="subQuest5">Hier steht die Unterfrage:
         Ich wünschte mir ein Bild zu sein, das ohne

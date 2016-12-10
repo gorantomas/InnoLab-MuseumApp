@@ -7,12 +7,13 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
    SharedPreferences settings;
    SharedPreferences.Editor editor;
@@ -262,6 +263,52 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
    }
 
+   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
+      switch(buttonView.getId())
+      {
+
+         case R.id.rB1:
+            if(isChecked)
+            {
+               radioButtons[1].setChecked(false);
+               radioButtons[2].setChecked(false);
+               radioButtons[3].setChecked(false);
+            }
+            break;
+
+         case R.id.rB2:
+            if(isChecked)
+            {
+               radioButtons[0].setChecked(false);
+               radioButtons[2].setChecked(false);
+               radioButtons[3].setChecked(false);
+            }
+            break;
+
+         case R.id.rB3:
+            if(isChecked)
+            {
+               radioButtons[0].setChecked(false);
+               radioButtons[1].setChecked(false);
+               radioButtons[3].setChecked(false);
+            }
+            break;
+
+         case R.id.rB4:
+            if(isChecked)
+            {
+               radioButtons[0].setChecked(false);
+               radioButtons[1].setChecked(false);
+               radioButtons[2].setChecked(false);
+            }
+            break;
+
+         default:
+            break;
+      }
+
+   }
+
    private void checkAnswer(int currentQuestion){
       switch(currentQuestion)
       {
@@ -357,8 +404,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
       radioButtons = new RadioButton[4];
       for(int i = 0; i<radioButtons.length; i++)
       {
-         String b = "rB" + (i+1);
+         String b = "rB" + (i + 1);
          radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
+         radioButtons[i].setOnCheckedChangeListener(this);
       }
    }
 
