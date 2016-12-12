@@ -68,7 +68,8 @@ public class CheckAnswer {
    public boolean getTypedAnswer(Activity activity, int QuestionNr){
       findVariables(activity);
       String typedText = editText.getText().toString().trim().toLowerCase();
-
+      // compare typedtext to getResources.getString (QuestionNr)
+      // if typedtext contains the string from xml -> return true
 
       return returnValue;
    }
