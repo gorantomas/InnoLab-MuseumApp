@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class ResultRowAdapter extends ArrayAdapter<String> {
 
    ViewHolder viewHolder;
-   ArrayList<Boolean> mainQuestion, subQuestion;
+   ArrayList<Boolean> mainQuestion;
    String station, maxPoints;
    String[] questionTitle;
    int actPoints = 0, allPoints = 0, maxAllPoints = 0;
@@ -28,11 +28,11 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
       TextView points;
    }
 
-   public ResultRowAdapter(Context context, ArrayList<Boolean> mainQuestion, ArrayList<Boolean> subQuestion, String[] questionTitle){
+   public ResultRowAdapter(Context context, ArrayList<Boolean> mainQuestion, String[] questionTitle){
       super(context, 0, questionTitle);
       this.context = context;
       this.mainQuestion = mainQuestion;
-      this.subQuestion = subQuestion;
+
       this.questionTitle = questionTitle;
       maxPoints = context.getResources().getString(R.string.maxPoints);
       maxAllPoints = context.getResources().getInteger(R.integer.pointMainQuestion) * mainQuestion.size() * 2;
@@ -65,8 +65,7 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
       {
          if(mainQuestion.get(position))
             actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
-         if(subQuestion.get(position))
-            actPoints += context.getResources().getInteger(R.integer.pointSubQuestion);
+
 
          allPoints += actPoints;
          viewHolder.points.setText(actPoints + " von " + maxPoints);

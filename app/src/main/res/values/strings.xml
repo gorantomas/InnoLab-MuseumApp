@@ -4,11 +4,13 @@
     <string name="frau">Forscherin</string>
 
     <!-- Fragenüberschriften -->
-    <string name="st1">Station1</string>
-    <string name="st2">Station2</string>
-    <string name="st3">Station3</string>
-    <string name="st4">Station4</string>
-    <string name="st5">Station5</string>
+    <string name="st1">Werkzeuge aus Stein</string>
+    <string name="st2">Das Fastentuch von Bendern</string>
+    <string name="st3">Alpabfahrtsherz</string>
+    <string name="st4">Die Fürsten von Liechtenstein</string>
+    <string name="st5">Schiefertafel und Griffel</string>
+    <string name="st6">Saurierknochen</string>
+    <string name="st7">Murmeltier</string>
 
     <integer name="pointMainQuestion">1</integer>
     <integer name="pointSubQuestion">1</integer>
@@ -16,100 +18,231 @@
 
 
     <string-array name="qestions">
-        <item name="quest1">frage 1</item>
-        <item name="quest2">frage 2</item>
-        <item name="quest3">frage 3</item>
-        <item name="quest4">frage 4</item>
-        <item name="quest5">frage 5</item>
+        <item name="quest1">Station 1</item>
+        <item name="quest2">Station 2</item>
+        <item name="quest3">Station 3</item>
+        <item name="quest4">Station 4</item>
+        <item name="quest5">Station 5</item>
+        <item name="quest6">Station 6</item>
+        <item name="quest7">Station 7</item>
         <item name="sum-"> </item>
         <item name="sum">Summe:</item>
     </string-array>
 
 
-    <string name="quest1">Hier steht die Frage: Ich wünschte mir ein
-        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
-        der nicht auffällt, aber das Echte glänzen lässt.? </string>
-    <string-array name="guest1answers">
+    <string name="quest10">Diese Werkzeuge wurden von Menschen, die vor 6000 Jahren hier lebten,
+        hergestellt. Eines ist nie fertig geworden. Welches? Was hätte es werden sollen?</string>
+    <string-array name="guest10answers">
         <item name="answer1">Antwort 1</item>
         <item name="answer2">Antwort 2</item>
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
-    <integer name="quest1rightanswer">1</integer>
+    <integer name="quest10rightanswer">1</integer>
 
-    <string name="subQuest1">Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? </string>
-    <string name="subQuest1answer">word</string>
-
-    <string name="quest2">Hier steht die Frage: Ich wünschte mir ein
-        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
-        der nicht auffällt, aber das Echte glänzen lässt.? </string>
-    <string-array name="guest2answers">
+    <string name="quest11">Wie nennt man die Zeit, aus der all diese Gegenstände stammen?</string>
+    <string-array name="guest11answers">
         <item name="answer1">Antwort 1</item>
         <item name="answer2">Antwort 2</item>
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
-    <integer name="quest2rightanswer">1</integer>
+    <integer name="quest11rightanswer">1</integer>
 
-    <string name="subQuest2">Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? </string>
-    <string name="subQuest2answer">word</string>
 
-    <string name="quest3">Hier steht die Frage: Ich wünschte mir ein
-        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
-        der nicht auffällt, aber das Echte glänzen lässt.? </string>
-    <string-array name="guest3answers">
+
+
+    <string name="quest20">Dieses bemalte Tuch ist das grösste Objekt im Museum und sehr alt.
+        Wann wurde es gemalt? Such die Jahreszahl!</string>
+    <string-array name="guest20answers">
         <item name="answer1">Antwort 1</item>
         <item name="answer2">Antwort 2</item>
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
-    <integer name="quest3rightanswer">1</integer>
+    <integer name="quest20rightanswer">1</integer>
 
-    <string name="subQuest3">Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? </string>
-    <string name="subQuest3answer">word</string>
-
-    <string name="quest4">Hier steht die Frage: Ich wünschte mir ein
-        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
-        der nicht auffällt, aber das Echte glänzen lässt.? </string>
-    <string-array name="guest4answers">
+    <string name="quest21">Das Tuch wurde früher während der Fastenzeit in der Kirche von Bendern
+        aufgehängt. Die Fastenzeit gibt es auch heute noch. Wann beginnt sie?</string>
+    <string-array name="guest21answers">
         <item name="answer1">Antwort 1</item>
         <item name="answer2">Antwort 2</item>
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
-    <integer name="quest4rightanswer">1</integer>
+    <integer name="quest21rightanswer">1</integer>
 
-    <string name="subQuest4">Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? </string>
-    <string name="subQuest4answer">word</string>
-
-    <string name="quest5">Hier steht die Frage: Ich wünschte mir ein
-        Bild zu sein, das ohne Farbe auskommt, mit einem Rahmen,
-        der nicht auffällt, aber das Echte glänzen lässt.? </string>
-    <string-array name="guest5answers">
+    <string name="quest22">Das Fastentuch ist eigentlich eine Bibel in Bildern. Warum wurden die
+        Geschichten nicht einfach auf das Tuch geschrieben?</string>
+    <string-array name="guest22answers">
         <item name="answer1">Antwort 1</item>
         <item name="answer2">Antwort 2</item>
         <item name="answer3">Antwort 3</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
-    <integer name="quest5rightanswer">1</integer>
+    <integer name="quest22rightanswer">1</integer>
 
-    <string name="subQuest5">Hier steht die Unterfrage:
-        Ich wünschte mir ein Bild zu sein, das ohne
-        Farbe auskommt, mit einem Rahmen, der nicht auffällt,
-        aber das Echte glänzen lässt.? </string>
-    <string name="subQuest5answer">word</string>
+    <string name="quest23">Wie viele Bilder sind auf dem Fastentuch zu sehen? Zähl sie!</string>
+    <string-array name="guest23answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest23rightanswer">1</integer>
 
+
+
+
+    <string name="quest30">Im Herbst führen die Hirten die Kühe von der Alp zurück ins Tal. Dafür
+    werden die Kühe schön geschmückt. Sind alle Kühe geschmückt? Schau dir den Film an!</string>
+    <string-array name="guest30answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest30rightanswer">1</integer>
+
+    <string name="quest31">Ein ganz typischer Schmuck, den es so nur in Liechtenstein gibt, ist das Alpabfahrtsherz. Aus welchem Material ist es gemacht?</string>
+    <string-array name="guest31answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest31rightanswer">1</integer>
+
+    <string name="quest32">Weisst du, was die Buchstaben JHS auf den Herzen bedeuten? Lies hier weiter!</string>
+    <string-array name="guest32answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest32rightanswer">1</integer>
+
+
+
+
+    <string name="quest40">Auf jedem Gemälde in diesem Raum siehst du einen Fürsten von
+        Liechtenstein. Such den Fürsten mit einem roten, pelzbesetzten Mantel. Wie heisst er?</string>
+    <string-array name="guest40answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest40rightanswer">1</integer>
+
+    <string name="quest41">Mit Johann Adam I. Andreas von Liechtenstein kam das heutige
+        Fürstentum Liechtenstein in den Besitz der Familie von Liechtenstein. Wie hat er das gemacht?</string>
+    <string-array name="guest41answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest41rightanswer">1</integer>
+
+    <string name="quest42">Was meinst du, lebten die Fürsten von Liechtenstein damals schon im
+        Schloss Vaduz?</string>
+    <string-array name="guest42answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest42rightanswer">1</integer>
+
+
+
+
+    <string name="quest50">Das Buch ist etwa 200 Jahre alt und wurde früher in den Schulen in
+        Liechtenstein gelesen. Für was aber wurden die zwei anderen Dinge gebraucht?</string>
+    <string-array name="guest50answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest50rightanswer">1</integer>
+
+
+    <string name="quest51">Was ist Schiefer, das Material, aus dem die Tafel und Griffel gemacht
+        wurden?</string>
+    <string-array name="guest51answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest51rightanswer">1</integer>
+
+
+
+
+    <string name="quest60">Vor über 200 Millionen Jahren starb ein Nothosaurus und seine Knochen
+        versteinerten. Ein Knochen wurde vor 50 Jahren in Schaan gefunden. Welcher?</string>
+    <string-array name="guest60answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest60rightanswer">1</integer>
+
+    <string name="quest61">Neben dem Knochen siehst du ein Modell eines Nothosaurus. Was meinst
+        du, war ein echter Nothosaurus kleiner als das Modell, gleich gross oder grösser?</string>
+    <string-array name="guest61answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest61rightanswer">1</integer>
+
+
+
+
+    <string name="quest70">In den Bergen von Liechtenstein leben viele Murmeltiere. Wenn man Glück
+        hat, sieht man sie ganz aufrecht im Grass stehen. Worauf stützen sie sich dabei?</string>
+    <string-array name="guest70answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest70rightanswer">1</integer>
+
+    <string name="quest71">Was machen Murmeltiere eigentlich im Winter?</string>
+    <string-array name="guest71answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest71rightanswer">1</integer>
+
+    <string name="quest72">Was machen Murmeltiere, wenn Gefahr droht?</string>
+    <string-array name="guest72answers">
+        <item name="answer1">Antwort 1</item>
+        <item name="answer2">Antwort 2</item>
+        <item name="answer3">Antwort 3</item>
+        <item name="answer4">Antwort 4</item>
+    </string-array>
+    <integer name="quest72rightanswer">1</integer>
+
+
+
+    <string name="route1">Geh vom Museumsshop durch die schmale Türe in die Archäologie. Such im ersten Raum an der rechten Wand die Vitrine mit den Steinwerkzeugen.</string>
+    <string name="route2">Geh zurück in den Museumsshop. Such im nächsten Raum die Holztreppe und steig in den 1. Stock (es gibt auch einen Lift). Geh durch die Glastür in den ersten Raum auf der linken Seite.</string>
+    <string name="route3">Such den Verbindungsgang ins Nachbarsgebäude. Du kannst dort aus dem Fenster schauen und siehst, dass du zwischen zwei Häusern stehst! Geh in den Raum mit den vielen Herzen.</string>
+    <string name="route4">Geh zurück zur Holztreppe und steig in den 2. Stock (es gibt auch  einen Lift). Such den Raum mit den vielen Bildern der Fürsten von Liechtenstein.</string>
+    <string name="route5">Such auf diesem Stockwerk den Verbindungsgang ins Nachbargebäude. Geh im ersten Raum nach rechts und weiter bis ins Schulzimmer. Schau dort in die Vitrine hinter der alten Schulbank.</string>
+    <string name="route6">Geh zurück zur Holztreppe und wieder ins Erdgeschoss hinunter. Geh nach rechts bis zur grossen Steintreppe. Steig bis in den 1. Stock (es gibt auch einen Lift). Such im ersten Raum die Vitrine mit dem Saurier.</string>
+    <string name="route7">Jetzt gehts zur letzten Station. Such dafür das Murmeltier. Es befindet sich auch in diesem Raum.</string>
+    <string name="route8">Bravo, jetzt kennst du alle meine Lieblingsstücke! Konntest du alle Fragen beantworten? Wie viele Punkte hast du wohl gemacht? Schau hier!</string>
+    <string name="route9">Wenn du möchtest, kannst du dir an der Kasse eine kleine Belohnung abholen!</string>
 
 </resources>

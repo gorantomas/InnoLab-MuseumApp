@@ -16,8 +16,8 @@ public class Results extends Activity {
 
    ListView listView;
    ArrayList<Boolean> mainQuestion;
-   ArrayList<Boolean> subQuestion;
-   boolean[] b_mainQuestion, b_subQuestion = new boolean[5];
+
+   boolean[] b_mainQuestion;
    String[] questionTitle;
 
    @Override protected void onCreate(Bundle savedInstanceState){
@@ -26,16 +26,16 @@ public class Results extends Activity {
       listView = (ListView) findViewById(R.id.list);
 
       mainQuestion = new ArrayList<Boolean>();
-      subQuestion = new ArrayList<Boolean>();
+
 
       Bundle bundle = getIntent().getExtras();
       b_mainQuestion = bundle.getBooleanArray("main");
-      b_subQuestion = bundle.getBooleanArray("sub");
+
 
       for(int i = 0; i<b_mainQuestion.length; i++)
       {
          mainQuestion.add(b_mainQuestion[i]);
-         subQuestion.add(b_subQuestion[i]);
+
       }
 
       showResult();
@@ -45,7 +45,7 @@ public class Results extends Activity {
    public void showResult(){
       questionTitle = getResources().getStringArray(R.array.qestions);
 
-      ResultRowAdapter resultRowAdapter = new ResultRowAdapter(this.getBaseContext(), mainQuestion, subQuestion, questionTitle);
+      ResultRowAdapter resultRowAdapter = new ResultRowAdapter(this.getBaseContext(), mainQuestion, questionTitle);
       listView.setAdapter(resultRowAdapter);
       listView.invalidate();
    }

@@ -7,24 +7,29 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
    SharedPreferences settings;
    SharedPreferences.Editor editor;
-   ArrayList<Boolean> mainQuestion, subQuestion;
-   boolean[] b_mainQuestion, b_subQuestion;
+   ArrayList<Boolean> mainQuestion;
+   boolean[] b_mainQuestion;
    int curQuestion = -1;
+   int nextQuestion = -1;
+   int lastQuestion = -1;
    int questionCounter = 0;
+   int countOfQuestions = -1;
+   int[] questionsArray = {10, 11, 20, 21, 22, 23, 30, 31, 32, 40, 41, 42, 50, 51, 60, 61, 70, 71, 72};
+   int nextRoute = -1;
+   int lastRoute = -1;
    Button routeNext, mainquestNext, subquestNext;
    RadioButton[] radioButtons;
    String[] mainQuestAnswers;
-   TextView tv_mainQuest, tv_subQuest;
+   TextView tv_mainQuest, tv_subQuest, tv_route;
    CheckAnswer checkAnswer;
    Resources res;
 
@@ -35,18 +40,27 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       settings = getApplicationContext().getSharedPreferences("mySettings", MODE_PRIVATE);
       editor = settings.edit();
 
+      countOfQuestions = questionsArray.length;
+
       checkAnswer = new CheckAnswer();
 
       mainQuestion = new ArrayList<Boolean>();
-      subQuestion = new ArrayList<Boolean>();
-      b_mainQuestion = new boolean[5];
-      b_subQuestion = new boolean[5];
+
+      b_mainQuestion = new boolean[questionsArray.length];
+
       res = getResources();
-      routeNext = (Button) findViewById(R.id.routeNext);
-      routeNext.setOnClickListener(this);
-      curQuestion = 10;
-      routeNext.setText("next" + (curQuestion / 10));
-      setTitleRoute("1");
+      //      routeNext = (Button) findViewById(R.id.routeNext);
+      //      routeNext.setOnClickListener(this);
+      //      curQuestion = 10;
+      //      routeNext.setText("next" + (curQuestion / 10));
+      //      setTitleRoute("1");
+      nextRoute = 10;
+      lastRoute = nextRoute;
+      nextQuestion = 10;
+      lastQuestion = nextQuestion;
+      curQuestion = nextQuestion;
+      switchRoute(nextRoute);
+
    }
 
    private void switchRoute(int route){
@@ -57,50 +71,82 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setTitleRoute("1");
             break;
          case 10:
-            setContentView(R.layout.act_route);
-            routeNext = (Button) findViewById(R.id.routeNext);
-            routeNext.setOnClickListener(this);
-            routeNext.setText("next" + (route / 10));
+            setRouteVariables();
             setTitleRoute("1");
+            tv_route.setText(getString(R.string.route1));
+            nextRoute = 20;
             break;
          case 20:
-            setContentView(R.layout.act_route);
-            routeNext = (Button) findViewById(R.id.routeNext);
-            routeNext.setOnClickListener(this);
-            routeNext.setText("next" + (route / 10));
+            lastRoute = 10;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route2));
             curQuestion = 20;
             setTitleRoute("2");
+            nextRoute = 30;
             break;
          case 30:
-            setContentView(R.layout.act_route);
-            routeNext = (Button) findViewById(R.id.routeNext);
-            routeNext.setOnClickListener(this);
-            routeNext.setText("next" + (route / 10));
+            lastRoute = 20;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route3));
             curQuestion = 30;
             setTitleRoute("3");
+            nextRoute = 40;
             break;
          case 40:
-            setContentView(R.layout.act_route);
-            routeNext = (Button) findViewById(R.id.routeNext);
-            routeNext.setOnClickListener(this);
-            routeNext.setText("next" + (route / 10));
+            lastRoute = 30;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route4));
             curQuestion = 40;
             setTitleRoute("4");
+            nextRoute = 50;
             break;
          case 50:
-            setContentView(R.layout.act_route);
-            routeNext = (Button) findViewById(R.id.routeNext);
-            routeNext.setOnClickListener(this);
-            routeNext.setText("next" + (route / 10));
+            lastRoute = 40;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route5));
             curQuestion = 50;
             setTitleRoute("5");
+            nextRoute = 60;
             break;
          case 60:
-            //setContentView(R.layout.act_route);
-            // fertig?
-            // results aufrufen?
-            showResult();
+            lastRoute = 50;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route6));
+            curQuestion = 60;
+            setTitleRoute("6");
+            nextRoute = 70;
             break;
+         case 70:
+            lastRoute = 60;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route7));
+            curQuestion = 70;
+            setTitleRoute("7");
+            nextRoute = 80;
+            break;
+         case 80:
+            lastRoute = 70;
+            setRouteVariables();
+            tv_route.setText(getString(R.string.route8));
+            curQuestion = 80;
+            setTitleRoute("8");
+            nextRoute = -1;
+            break;
+         //         case 90:
+         //            //            lastRoute = 80;
+         //            //            setRouteVariables();
+         //            //            tv_route.setText(getString(R.string.route9));
+         //            //            curQuestion = 90;
+         //            //            setTitleRoute("9");
+         //            //            nextRoute = 91;
+         //            showResult();
+         //            break;
+         //         case 91:
+         //            //setContentView(R.layout.act_route);
+         //            // fertig?
+         //            // results aufrufen?
+         //            showResult();
+         //            break;
 
          default:
             break;
@@ -112,130 +158,249 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       switch(question)
       {
          case 10:
-            setContentView(R.layout.act_mainquestion);
             curQuestion = 10;
-            //set variables
+            nextQuestion = 11;
+            setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
-            mainQuestAnswers = res.getStringArray(R.array.guest1answers);
-            for(int i = 0; i<radioButtons.length; i++)
-            {
-               radioButtons[i].setText(mainQuestAnswers[i].toString());
-            }
+            //            mainQuestAnswers = res.getStringArray(R.array.guest1answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
             mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest1));
+            tv_mainQuest.setText(getString(R.string.quest10));
+            setTitleQuestion();
             break;
          case 11:
-            setContentView(R.layout.act_subquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 11;
-            //set variables
-            setSubQuestionVariables();
-            subquestNext.setText("sub" + question);
-
-            //            tv_subQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_subQuest.setText("UnterFrage " + question);
+            nextQuestion = 20;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest11));
+            setTitleQuestion();
             break;
          case 20:
-            setContentView(R.layout.act_mainquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 20;
+            nextQuestion = 21;
+            setContentView(R.layout.act_mainquestion);
             //set variables
             setMainQuestionVariables();
-            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
-            for(int i = 0; i<radioButtons.length; i++)
-            {
-               radioButtons[i].setText(mainQuestAnswers[i].toString());
-            }
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
             mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest2));
+            tv_mainQuest.setText(getString(R.string.quest20));
+            setTitleQuestion();
             break;
          case 21:
-            setContentView(R.layout.act_subquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 21;
-            //set variables
-            setSubQuestionVariables();
-            subquestNext.setText("sub" + question);
-
-            //            tv_subQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_subQuest.setText("UnterFrage " + question);
+            nextQuestion = 22;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest21));
+            setTitleQuestion();
+            break;
+         case 22:
+            lastQuestion = nextQuestion;
+            curQuestion = 22;
+            nextQuestion = 23;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest22));
+            setTitleQuestion();
+            break;
+         case 23:
+            lastQuestion = nextQuestion;
+            curQuestion = 23;
+            nextQuestion = 30;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest23));
+            setTitleQuestion();
             break;
          case 30:
-            setContentView(R.layout.act_mainquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 30;
+            nextQuestion = 31;
+            setContentView(R.layout.act_mainquestion);
             //set variables
             setMainQuestionVariables();
-            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
-            for(int i = 0; i<radioButtons.length; i++)
-            {
-               radioButtons[i].setText(mainQuestAnswers[i].toString());
-            }
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
             mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest3));
+            tv_mainQuest.setText(getString(R.string.quest30));
+            setTitleQuestion();
             break;
          case 31:
-            setContentView(R.layout.act_subquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 31;
-            //set variables
-            setSubQuestionVariables();
-            subquestNext.setText("sub" + question);
-
-            //            tv_subQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_subQuest.setText("UnterFrage " + question);
+            nextQuestion = 32;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest31));
+            setTitleQuestion();
+            break;
+         case 32:
+            lastQuestion = nextQuestion;
+            curQuestion = 32;
+            nextQuestion = 40;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest32));
+            setTitleQuestion();
             break;
          case 40:
-            setContentView(R.layout.act_mainquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 40;
+            nextQuestion = 41;
+            setContentView(R.layout.act_mainquestion);
             //set variables
             setMainQuestionVariables();
-            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
-            for(int i = 0; i<radioButtons.length; i++)
-            {
-               radioButtons[i].setText(mainQuestAnswers[i].toString());
-            }
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
             mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest4));
+            tv_mainQuest.setText(getString(R.string.quest40));
+            setTitleQuestion();
             break;
          case 41:
-            setContentView(R.layout.act_subquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 41;
-            //set variables
-            setSubQuestionVariables();
-            subquestNext.setText("sub" + question);
-            //            tv_subQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_subQuest.setText("UnterFrage " + question);
+            nextQuestion = 42;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest41));
+            setTitleQuestion();
+            break;
+         case 42:
+            lastQuestion = nextQuestion;
+            curQuestion = 42;
+            nextQuestion = 50;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest42));
+            setTitleQuestion();
             break;
          case 50:
-            setContentView(R.layout.act_mainquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 50;
+            nextQuestion = 51;
+            setContentView(R.layout.act_mainquestion);
             //set variables
             setMainQuestionVariables();
-            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
-            for(int i = 0; i<radioButtons.length; i++)
-            {
-               radioButtons[i].setText(mainQuestAnswers[i].toString());
-            }
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
             mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest5));
+            tv_mainQuest.setText(getString(R.string.quest50));
+            setTitleQuestion();
             break;
          case 51:
-            setContentView(R.layout.act_subquestion);
+            lastQuestion = nextQuestion;
             curQuestion = 51;
+            nextQuestion = 60;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest51));
+            setTitleQuestion();
+            break;
+
+         case 60:
+            lastQuestion = nextQuestion;
+            curQuestion = 60;
+            nextQuestion = 61;
+            setContentView(R.layout.act_mainquestion);
             //set variables
-            setSubQuestionVariables();
-            subquestNext.setText("sub" + question);
-            //            tv_subQuest = (TextView) findViewById(R.id.textView2);
-            //            tv_subQuest.setText("UnterFrage " + question);
+            setMainQuestionVariables();
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest60));
+            setTitleQuestion();
+            break;
+         case 61:
+            lastQuestion = nextQuestion;
+            curQuestion = 61;
+            nextQuestion = 70;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest61));
+            setTitleQuestion();
+            break;
+         case 70:
+            lastQuestion = nextQuestion;
+            curQuestion = 70;
+            nextQuestion = 71;
+            setContentView(R.layout.act_mainquestion);
+            //set variables
+            setMainQuestionVariables();
+            //            mainQuestAnswers = res.getStringArray(R.array.guest2answers);
+            //            for(int i = 0; i<radioButtons.length; i++)
+            //            {
+            //               radioButtons[i].setText(mainQuestAnswers[i].toString());
+            //            }
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest70));
+            setTitleQuestion();
+            break;
+         case 71:
+            lastQuestion = nextQuestion;
+            curQuestion = 71;
+            nextQuestion = 72;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest71));
+            setTitleQuestion();
+            break;
+         case 72:
+            lastQuestion = nextQuestion;
+            curQuestion = 72;
+            nextQuestion = 99;
+            setContentView(R.layout.act_mainquestion);
+            setMainQuestionVariables();
+            mainquestNext.setText("main" + (question / 10));
+            tv_mainQuest.setText(getString(R.string.quest72));
+            setTitleQuestion();
             break;
 
          default:
             break;
       }
-      setTitleQuestion();
+
    }
 
    private void showResult(){
 
       Intent myIntent = new Intent(this, Results.class);
       myIntent.putExtra("main", b_mainQuestion);
-      myIntent.putExtra("sub", b_subQuestion);
+      myIntent.putExtra("main2", mainQuestion);
+      myIntent.putExtra("arraySize", questionsArray.length);
 
       startActivity(myIntent);
    }
@@ -251,11 +416,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
           */
             checkAnswer(curQuestion);
             break;
-         case R.id.subQuestNext:
-            checkAnswer(curQuestion);
-            break;
+         //         case R.id.subQuestNext:
+         //            checkAnswer(curQuestion);
+         //            break;
          case R.id.routeNext:
-            switchQuestion(curQuestion);
+            if(nextRoute != -1)
+               switchQuestion(curQuestion);
+            else
+               showResult();
             break;
          default:
             break;
@@ -263,51 +431,51 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 
    }
 
-   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
-      switch(buttonView.getId())
-      {
-
-         case R.id.rB1:
-            if(isChecked)
-            {
-               radioButtons[1].setChecked(false);
-               radioButtons[2].setChecked(false);
-               radioButtons[3].setChecked(false);
-            }
-            break;
-
-         case R.id.rB2:
-            if(isChecked)
-            {
-               radioButtons[0].setChecked(false);
-               radioButtons[2].setChecked(false);
-               radioButtons[3].setChecked(false);
-            }
-            break;
-
-         case R.id.rB3:
-            if(isChecked)
-            {
-               radioButtons[0].setChecked(false);
-               radioButtons[1].setChecked(false);
-               radioButtons[3].setChecked(false);
-            }
-            break;
-
-         case R.id.rB4:
-            if(isChecked)
-            {
-               radioButtons[0].setChecked(false);
-               radioButtons[1].setChecked(false);
-               radioButtons[2].setChecked(false);
-            }
-            break;
-
-         default:
-            break;
-      }
-
-   }
+   //   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
+   //      switch(buttonView.getId())
+   //      {
+   //
+   //         case R.id.rB1:
+   //            if(isChecked)
+   //            {
+   //               radioButtons[1].setChecked(false);
+   //               radioButtons[2].setChecked(false);
+   //               radioButtons[3].setChecked(false);
+   //            }
+   //            break;
+   //
+   //         case R.id.rB2:
+   //            if(isChecked)
+   //            {
+   //               radioButtons[0].setChecked(false);
+   //               radioButtons[2].setChecked(false);
+   //               radioButtons[3].setChecked(false);
+   //            }
+   //            break;
+   //
+   //         case R.id.rB3:
+   //            if(isChecked)
+   //            {
+   //               radioButtons[0].setChecked(false);
+   //               radioButtons[1].setChecked(false);
+   //               radioButtons[3].setChecked(false);
+   //            }
+   //            break;
+   //
+   //         case R.id.rB4:
+   //            if(isChecked)
+   //            {
+   //               radioButtons[0].setChecked(false);
+   //               radioButtons[1].setChecked(false);
+   //               radioButtons[2].setChecked(false);
+   //            }
+   //            break;
+   //
+   //         default:
+   //            break;
+   //      }
+   //
+   //   }
 
    private void checkAnswer(int currentQuestion){
       switch(currentQuestion)
@@ -320,13 +488,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[0] = true;
             }
             //else set false
-            switchQuestion(11);
+            switchQuestion(nextQuestion);
             break;
          case 11:
-            checkAnswer.getTypedAnswer(this, 11);
-            subQuestion.add(0, false);
-            b_subQuestion[0] = false;
-            switchRoute(20);
+            switchRoute(nextRoute);
             break;
          case 20:
             if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
@@ -334,12 +499,19 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                mainQuestion.add(1, true);
                b_mainQuestion[1] = true;
             }
-            switchQuestion(21);
+            switchQuestion(nextQuestion);
             break;
          case 21:
-            subQuestion.add(1, false);
-            b_subQuestion[1] = true;
-            switchRoute(30);
+
+            switchQuestion(nextQuestion);
+            break;
+         case 22:
+
+            switchQuestion(nextQuestion);
+            break;
+         case 23:
+
+            switchRoute(nextRoute);
             break;
          case 30:
             if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
@@ -347,12 +519,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                mainQuestion.add(2, true);
                b_mainQuestion[2] = true;
             }
-            switchQuestion(31);
+            switchQuestion(nextQuestion);
             break;
          case 31:
-            subQuestion.add(2, false);
-            b_subQuestion[2] = true;
-            switchRoute(40);
+
+            switchQuestion(nextQuestion);
+            break;
+         case 32:
+
+            switchRoute(nextRoute);
             break;
          case 40:
             if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
@@ -360,12 +535,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                mainQuestion.add(3, true);
                b_mainQuestion[3] = true;
             }
-            switchQuestion(41);
+            switchQuestion(nextQuestion);
             break;
          case 41:
-            subQuestion.add(3, false);
-            b_subQuestion[3] = false;
-            switchRoute(50);
+
+            switchQuestion(nextQuestion);
+            break;
+         case 42:
+
+            switchRoute(nextRoute);
             break;
          case 50:
             if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
@@ -373,12 +551,39 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                mainQuestion.add(4, true);
                b_mainQuestion[4] = true;
             }
-            switchQuestion(51);
+            switchQuestion(nextQuestion);
             break;
          case 51:
-            subQuestion.add(4, false);
-            b_subQuestion[4] = true;
-            switchRoute(60);
+
+            switchRoute(nextRoute);
+            break;
+         case 60:
+            if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
+            {
+               mainQuestion.add(4, true);
+               b_mainQuestion[4] = true;
+            }
+            switchQuestion(nextQuestion);
+            break;
+         case 61:
+
+            switchRoute(nextRoute);
+            break;
+         case 70:
+            if(checkAnswer.getChoosedAnswer(this, currentQuestion / 10))
+            {
+               mainQuestion.add(4, true);
+               b_mainQuestion[4] = true;
+            }
+            switchQuestion(nextQuestion);
+            break;
+         case 71:
+
+            switchQuestion(nextQuestion);
+            break;
+         case 72:
+
+            switchRoute(nextRoute);
             break;
 
          default:
@@ -393,7 +598,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 
    private void setTitleQuestion(){
       questionCounter += 1;
-      setTitle("Frage " + questionCounter + " von 10");
+      setTitle("Frage " + questionCounter + " von " + questionsArray.length);
    }
 
    private void setMainQuestionVariables(){
@@ -401,19 +606,21 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       mainquestNext.setOnClickListener(this);
       tv_mainQuest = (TextView) findViewById(R.id.textView3);
       mainQuestAnswers = new String[4];
-      radioButtons = new RadioButton[4];
-      for(int i = 0; i<radioButtons.length; i++)
-      {
-         String b = "rB" + (i + 1);
-         radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
-         radioButtons[i].setOnCheckedChangeListener(this);
-      }
+      //      radioButtons = new RadioButton[4];
+      //      for(int i = 0; i<radioButtons.length; i++)
+      //      {
+      //         String b = "rB" + (i + 1);
+      //         radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
+      //         radioButtons[i].setOnCheckedChangeListener(this);
+      //      }
    }
 
-   private void setSubQuestionVariables(){
-      subquestNext = (Button) findViewById(R.id.subQuestNext);
-      subquestNext.setOnClickListener(this);
-
+   private void setRouteVariables(){
+      setContentView(R.layout.act_route);
+      routeNext = (Button) findViewById(R.id.routeNext);
+      routeNext.setOnClickListener(this);
+      routeNext.setText("Weiter");
+      tv_route = (TextView) findViewById(R.id.textView4);
    }
 
 }

@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:weightSum="1">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/schriftrolle"
-        android:id="@+id/imageView2"
+        android:layout_above="@+id/routeNext"
         android:layout_marginTop="0dp"
-        android:layout_above="@+id/routeNext"/>
+        android:src="@drawable/schriftrolle"/>
 
     <TextView
-        android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. Hier steht die ausführliche
-        Beschreibung wie die Station gefunden wird. Hier steht die ausführliche Beschreibung"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/textView4"
+        android:layout_above="@+id/routeNext"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"
+        android:gravity="center"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:layout_above="@+id/routeNext"
-        />
-
-    <ImageView
-        android:src="@drawable/marmot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
-        android:layout_marginBottom="37dp"
-        android:layout_alignBottom="@+id/routeNext"
-        android:layout_alignParentEnd="true" />
+        android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. Hier steht die ausführliche
+        Beschreibung wie die Station gefunden wird. Hier steht die ausführliche Beschreibung"
+        android:textSize="24sp"/>
 
     <Button
-        android:text="Weiter"
+        android:id="@+id/routeNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/arrow_right"
-        android:id="@+id/routeNext"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/arrow_right"
+        android:text="Weiter"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/routeNext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/rat2"/>
+
 
 </RelativeLayout>

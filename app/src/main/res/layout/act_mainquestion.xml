@@ -1,109 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:baselineAligned="false"
-              android:orientation="vertical"
-              android:weightSum="1">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:weightSum="1">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner2"
-        android:text="@string/quest1"
-        android:textSize="24sp"
+        android:gravity="center"
         android:paddingBottom="15dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_marginTop="20dp"
-        />
+        android:paddingTop="15dp"
+        android:text="@string/quest10"
+        android:textSize="24sp"/>
 
     <Button
         android:id="@+id/mainQuestNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/arrow_right"
-        android:text="Weiter"
-        android:layout_weight="0.15"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="0.15"
+        android:background="@drawable/arrow_right"
+        android:text="Weiter"/>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.27"
-
-        android:paddingTop="35dp"
         android:layout_above="@+id/mainQuestNext"
         android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
         android:paddingBottom="35dp">
 
-        <RelativeLayout
+        <RadioButton
+            android:id="@+id/rB1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radiobuttonstyle"
+            android:button="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Antwort 1"/>
 
-            <RadioButton
-                android:id="@+id/rB1"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:background="@drawable/radiobuttonstyle"
-                android:button="@android:color/transparent"
-                android:layout_alignParentTop="true"
-                android:text="Antwort 1"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:layout_marginLeft="20dp" />
+        <RadioButton
+            android:id="@+id/rB2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/radiobuttonstyle"
+            android:button="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Antwort 2"/>
 
-            <RadioButton
-                android:id="@+id/rB3"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:text="Antwort 3"
-                android:background="@drawable/radiobuttonstyle"
-                android:button="@android:color/transparent"
-                android:layout_below="@+id/rB2"
-                android:layout_alignParentStart="true"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="20dp" />
-
-            <RadioButton
-                android:id="@+id/rB2"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:background="@drawable/radiobuttonstyle"
-                android:button="@android:color/transparent"
-                android:layout_weight="1"
-                android:text="Antwort 2"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:layout_marginRight="20dp" />
-
-            <RadioButton
-                android:id="@+id/rB4"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:background="@drawable/radiobuttonstyle"
-                android:button="@android:color/transparent"
-                android:text="Antwort 4"
-                android:layout_below="@+id/rB2"
-                android:layout_alignParentEnd="true"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="20dp" />
-
-        </RelativeLayout>
+        <RadioButton
+            android:id="@+id/rB3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/radiobuttonstyle"
+            android:button="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Antwort 3"/>
 
     </RadioGroup>
 </RelativeLayout>
