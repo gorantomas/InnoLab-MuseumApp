@@ -43,7 +43,7 @@ public class Results extends Activity {
    }
 
    public void showResult(){
-      questionTitle = getResources().getStringArray(R.array.qestions);
+      questionTitle = getResources().getStringArray(R.array.questions);
 
       ResultRowAdapter resultRowAdapter = new ResultRowAdapter(this.getBaseContext(), mainQuestion, questionTitle);
       listView.setAdapter(resultRowAdapter);

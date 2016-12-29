@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
    int lastQuestion = -1;
    int questionCounter = 0;
    int countOfQuestions = -1;
-   int[] questionsArray = {10, 11, 20, 21, 22, 23, 30, 31, 32, 40, 41, 42, 50, 51, 60, 61, 70, 71, 72};
+   int[] questionsArray = {10, 11, 20, 21, 22, 23, 30, 31, 40, 41, 42, 50, 51, 60, 61, 70, 71, 72};
    int nextRoute = -1;
    int lastRoute = -1;
    Button routeNext, mainquestNext, subquestNext;
@@ -151,6 +151,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
    }
 
    private void switchQuestion(int question){
+      String[]answ;
       switch(question)
       {
          case 10:
@@ -166,7 +167,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest10));
             setTitleQuestion();
-            String[]answ = getResources().getStringArray(R.array.guest10answers);
+           answ = getResources().getStringArray(R.array.guest10answers);
             for(int i=0; i<radioButtons.length;i++){
                radioButtons[i].setText(answ[i]);
             }
@@ -183,6 +184,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest11));
             setTitleQuestion();
+           answ = getResources().getStringArray(R.array.guest11answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 20:
             lastQuestion = 11;
@@ -199,6 +206,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest20));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest20answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 21:
             lastQuestion = 20;
@@ -209,6 +222,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest21));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest21answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 22:
             lastQuestion = 21;
@@ -219,6 +238,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest22));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest22answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 23:
             lastQuestion = 22;
@@ -229,6 +254,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest23));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest23answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 30:
             lastQuestion = 23;
@@ -245,27 +276,39 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest30));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest30answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 31:
             lastQuestion = 30;
             curQuestion = 31;
-            nextQuestion = 32;
+            nextQuestion = 40;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest31));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest31answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
-         case 32:
-            lastQuestion = 31;
-            curQuestion = 32;
-            nextQuestion = 40;
-            setContentView(R.layout.act_mainquestion);
-            setMainQuestionVariables();
-            mainquestNext.setText("main" + (question / 10));
-            tv_mainQuest.setText(getString(R.string.quest32));
-            setTitleQuestion();
-            break;
+//         case 32:
+//            lastQuestion = 31;
+//            curQuestion = 32;
+//            nextQuestion = 40;
+//            setContentView(R.layout.act_mainquestion);
+//            setMainQuestionVariables();
+//            mainquestNext.setText("main" + (question / 10));
+//            tv_mainQuest.setText(getString(R.string.quest32));
+//            setTitleQuestion();
+//            break;
          case 40:
             lastQuestion = 32;
             curQuestion = 40;
@@ -281,6 +324,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest40));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest40answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 41:
             lastQuestion = 40;
@@ -291,6 +340,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest41));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest41answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 42:
             lastQuestion = 41;
@@ -301,6 +356,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest42));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest42answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 50:
             lastQuestion = 42;
@@ -317,6 +378,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest50));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest50answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 51:
             lastQuestion = 50;
@@ -327,6 +394,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest51));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest51answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
 
          case 60:
@@ -344,6 +417,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest60));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest60answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 61:
             lastQuestion = 60;
@@ -354,6 +433,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest61));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest61answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 70:
             lastQuestion = 61;
@@ -370,6 +455,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest70));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest70answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 71:
             lastQuestion = 70;
@@ -380,6 +471,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest71));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest71answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
          case 72:
             lastQuestion = 71;
@@ -390,6 +487,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest72));
             setTitleQuestion();
+            answ = getResources().getStringArray(R.array.guest72answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
             break;
 
          default:
@@ -406,11 +509,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
          nextRoute -= 10;
          switchRoute(lastRoute + 10);
       }
-      else
-      {
-         questionCounter -= 2;
-         switchQuestion(lastQuestion);
-      }
+//      else
+//      {
+//         questionCounter -= 2;
+//         switchQuestion(lastQuestion);
+//      }
    }
 
    private void showResult(){
