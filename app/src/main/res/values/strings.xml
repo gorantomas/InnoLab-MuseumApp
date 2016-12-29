@@ -65,6 +65,7 @@
     <string-array name="guest20answers">
         <item name="answer1">1612</item>
         <item name="answer2">1672</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest20rightanswer">1</integer>
     <string-array name="guest20explanation">
@@ -77,6 +78,7 @@
     <string-array name="guest21answers">
         <item name="answer1">Vor Weihnachten</item>
         <item name="answer2">Vor Ostern</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest21rightanswer">1</integer>
     <string-array name="guest21explanation">
@@ -89,6 +91,7 @@
     <string-array name="guest22answers">
         <item name="answer1">Weil damals fast niemand lesen konnte.</item>
         <item name="answer2">Weil es so viel Platz hatte.</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest22rightanswer">1</integer>
     <string-array name="guest22explanation">
@@ -100,6 +103,7 @@
     <string-array name="guest23answers">
         <item name="answer1">18</item>
         <item name="answer2">24</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest23rightanswer">1</integer>
     <string-array name="guest23explanation">
@@ -115,6 +119,7 @@
     <string-array name="guest30answers">
         <item name="answer1">Ja</item>
         <item name="answer2">Nein</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest30rightanswer">1</integer>
     <string-array name="guest30explanation">
@@ -181,6 +186,7 @@
     <string-array name="guest42answers">
         <item name="answer1">Ja</item>
         <item name="answer2">Nein</item>
+        <item name="answer3">xxx</item>
     </string-array>
     <integer name="quest42rightanswer">1</integer>
     <string-array name="guest42explanation">
@@ -212,7 +218,6 @@
         <item name="answer1">Plastik</item>
         <item name="answer2">Holz</item>
         <item name="answer3">Stein</item>
-        <item name="answer4">Antwort 4</item>
     </string-array>
     <integer name="quest51rightanswer">1</integer>
     <string-array name="guest51explanation">
