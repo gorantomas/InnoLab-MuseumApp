@@ -49,11 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
       b_mainQuestion = new boolean[questionsArray.length];
 
       res = getResources();
-      //      routeNext = (Button) findViewById(R.id.routeNext);
-      //      routeNext.setOnClickListener(this);
-      //      curQuestion = 10;
-      //      routeNext.setText("next" + (curQuestion / 10));
-      //      setTitleRoute("1");
+
       nextRoute = 10;
       lastRoute = nextRoute;
       nextQuestion = 10;
@@ -80,7 +76,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 10;
             setRouteVariables();
             tv_route.setText(getString(R.string.route2));
-            curQuestion = 20;
+            //            curQuestion = 20;
             setTitleRoute("2");
             nextRoute = 30;
             break;
@@ -88,7 +84,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 20;
             setRouteVariables();
             tv_route.setText(getString(R.string.route3));
-            curQuestion = 30;
+            //            curQuestion = 30;
             setTitleRoute("3");
             nextRoute = 40;
             break;
@@ -96,7 +92,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 30;
             setRouteVariables();
             tv_route.setText(getString(R.string.route4));
-            curQuestion = 40;
+            //            curQuestion = 40;
             setTitleRoute("4");
             nextRoute = 50;
             break;
@@ -104,7 +100,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 40;
             setRouteVariables();
             tv_route.setText(getString(R.string.route5));
-            curQuestion = 50;
+            //            curQuestion = 50;
             setTitleRoute("5");
             nextRoute = 60;
             break;
@@ -112,7 +108,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 50;
             setRouteVariables();
             tv_route.setText(getString(R.string.route6));
-            curQuestion = 60;
+            //            curQuestion = 60;
             setTitleRoute("6");
             nextRoute = 70;
             break;
@@ -120,7 +116,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 60;
             setRouteVariables();
             tv_route.setText(getString(R.string.route7));
-            curQuestion = 70;
+            //            curQuestion = 70;
             setTitleRoute("7");
             nextRoute = 80;
             break;
@@ -128,7 +124,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             lastRoute = 70;
             setRouteVariables();
             tv_route.setText(getString(R.string.route8));
-            curQuestion = 80;
+            //            curQuestion = 80;
             setTitleRoute("8");
             nextRoute = -1;
             break;
@@ -170,9 +166,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mainquestNext.setText("main" + (question / 10));
             tv_mainQuest.setText(getString(R.string.quest10));
             setTitleQuestion();
+            String[]answ = getResources().getStringArray(R.array.guest10answers);
+            for(int i=0; i<radioButtons.length;i++){
+               radioButtons[i].setText(answ[i]);
+            }
+            if(answ[2].equals("xxx"))
+               radioButtons[2].setVisibility(View.INVISIBLE);
+
             break;
          case 11:
-            lastQuestion = nextQuestion;
+            lastQuestion = 10;
             curQuestion = 11;
             nextQuestion = 20;
             setContentView(R.layout.act_mainquestion);
@@ -182,7 +185,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 20:
-            lastQuestion = nextQuestion;
+            lastQuestion = 11;
             curQuestion = 20;
             nextQuestion = 21;
             setContentView(R.layout.act_mainquestion);
@@ -198,7 +201,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 21:
-            lastQuestion = nextQuestion;
+            lastQuestion = 20;
             curQuestion = 21;
             nextQuestion = 22;
             setContentView(R.layout.act_mainquestion);
@@ -208,7 +211,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 22:
-            lastQuestion = nextQuestion;
+            lastQuestion = 21;
             curQuestion = 22;
             nextQuestion = 23;
             setContentView(R.layout.act_mainquestion);
@@ -218,7 +221,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 23:
-            lastQuestion = nextQuestion;
+            lastQuestion = 22;
             curQuestion = 23;
             nextQuestion = 30;
             setContentView(R.layout.act_mainquestion);
@@ -228,7 +231,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 30:
-            lastQuestion = nextQuestion;
+            lastQuestion = 23;
             curQuestion = 30;
             nextQuestion = 31;
             setContentView(R.layout.act_mainquestion);
@@ -244,7 +247,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 31:
-            lastQuestion = nextQuestion;
+            lastQuestion = 30;
             curQuestion = 31;
             nextQuestion = 32;
             setContentView(R.layout.act_mainquestion);
@@ -254,7 +257,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 32:
-            lastQuestion = nextQuestion;
+            lastQuestion = 31;
             curQuestion = 32;
             nextQuestion = 40;
             setContentView(R.layout.act_mainquestion);
@@ -264,7 +267,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 40:
-            lastQuestion = nextQuestion;
+            lastQuestion = 32;
             curQuestion = 40;
             nextQuestion = 41;
             setContentView(R.layout.act_mainquestion);
@@ -280,7 +283,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 41:
-            lastQuestion = nextQuestion;
+            lastQuestion = 40;
             curQuestion = 41;
             nextQuestion = 42;
             setContentView(R.layout.act_mainquestion);
@@ -290,7 +293,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 42:
-            lastQuestion = nextQuestion;
+            lastQuestion = 41;
             curQuestion = 42;
             nextQuestion = 50;
             setContentView(R.layout.act_mainquestion);
@@ -300,7 +303,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 50:
-            lastQuestion = nextQuestion;
+            lastQuestion = 42;
             curQuestion = 50;
             nextQuestion = 51;
             setContentView(R.layout.act_mainquestion);
@@ -316,7 +319,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 51:
-            lastQuestion = nextQuestion;
+            lastQuestion = 50;
             curQuestion = 51;
             nextQuestion = 60;
             setContentView(R.layout.act_mainquestion);
@@ -327,7 +330,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             break;
 
          case 60:
-            lastQuestion = nextQuestion;
+            lastQuestion = 51;
             curQuestion = 60;
             nextQuestion = 61;
             setContentView(R.layout.act_mainquestion);
@@ -343,7 +346,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 61:
-            lastQuestion = nextQuestion;
+            lastQuestion = 60;
             curQuestion = 61;
             nextQuestion = 70;
             setContentView(R.layout.act_mainquestion);
@@ -353,7 +356,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 70:
-            lastQuestion = nextQuestion;
+            lastQuestion = 61;
             curQuestion = 70;
             nextQuestion = 71;
             setContentView(R.layout.act_mainquestion);
@@ -369,7 +372,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 71:
-            lastQuestion = nextQuestion;
+            lastQuestion = 70;
             curQuestion = 71;
             nextQuestion = 72;
             setContentView(R.layout.act_mainquestion);
@@ -379,7 +382,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             setTitleQuestion();
             break;
          case 72:
-            lastQuestion = nextQuestion;
+            lastQuestion = 71;
             curQuestion = 72;
             nextQuestion = 99;
             setContentView(R.layout.act_mainquestion);
@@ -395,11 +398,25 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
    }
 
+   public void onBackPressed(){
+      if(curQuestion == 10 || curQuestion == 20 || curQuestion == 30 ||
+           curQuestion == 40 || curQuestion == 50 || curQuestion == 60 || curQuestion == 70)
+      {
+         questionCounter -= 1;
+         nextRoute -= 10;
+         switchRoute(lastRoute + 10);
+      }
+      else
+      {
+         questionCounter -= 2;
+         switchQuestion(lastQuestion);
+      }
+   }
+
    private void showResult(){
 
       Intent myIntent = new Intent(this, Results.class);
       myIntent.putExtra("main", b_mainQuestion);
-      myIntent.putExtra("main2", mainQuestion);
       myIntent.putExtra("arraySize", questionsArray.length);
 
       startActivity(myIntent);
@@ -421,7 +438,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
          //            break;
          case R.id.routeNext:
             if(nextRoute != -1)
-               switchQuestion(curQuestion);
+               switchQuestion(nextQuestion);
             else
                showResult();
             break;
@@ -430,52 +447,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
       }
 
    }
-
-   //   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
-   //      switch(buttonView.getId())
-   //      {
-   //
-   //         case R.id.rB1:
-   //            if(isChecked)
-   //            {
-   //               radioButtons[1].setChecked(false);
-   //               radioButtons[2].setChecked(false);
-   //               radioButtons[3].setChecked(false);
-   //            }
-   //            break;
-   //
-   //         case R.id.rB2:
-   //            if(isChecked)
-   //            {
-   //               radioButtons[0].setChecked(false);
-   //               radioButtons[2].setChecked(false);
-   //               radioButtons[3].setChecked(false);
-   //            }
-   //            break;
-   //
-   //         case R.id.rB3:
-   //            if(isChecked)
-   //            {
-   //               radioButtons[0].setChecked(false);
-   //               radioButtons[1].setChecked(false);
-   //               radioButtons[3].setChecked(false);
-   //            }
-   //            break;
-   //
-   //         case R.id.rB4:
-   //            if(isChecked)
-   //            {
-   //               radioButtons[0].setChecked(false);
-   //               radioButtons[1].setChecked(false);
-   //               radioButtons[2].setChecked(false);
-   //            }
-   //            break;
-   //
-   //         default:
-   //            break;
-   //      }
-   //
-   //   }
 
    private void checkAnswer(int currentQuestion){
       switch(currentQuestion)
@@ -606,13 +577,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
       mainquestNext.setOnClickListener(this);
       tv_mainQuest = (TextView) findViewById(R.id.textView3);
       mainQuestAnswers = new String[4];
-      //      radioButtons = new RadioButton[4];
-      //      for(int i = 0; i<radioButtons.length; i++)
-      //      {
-      //         String b = "rB" + (i + 1);
-      //         radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
-      //         radioButtons[i].setOnCheckedChangeListener(this);
-      //      }
+      radioButtons = new RadioButton[3];
+      for(int i = 0; i<radioButtons.length; i++)
+      {
+         String b = "rB" + (i + 1);
+         radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
+         //               radioButtons[i].setOnCheckedChangeListener(this);
+      }
+
+
+
    }
 
    private void setRouteVariables(){
