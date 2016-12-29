@@ -17,7 +17,7 @@
     <string name="maxPoints">2</string>
 
 
-    <string-array name="qestions">
+    <string-array name="questions">
         <item name="quest1">Station 1</item>
         <item name="quest2">Station 2</item>
         <item name="quest3">Station 3</item>
@@ -33,21 +33,29 @@
     <string name="quest10">Diese Werkzeuge wurden von Menschen, die vor 6000 Jahren hier lebten,
         hergestellt. Eines ist nie fertig geworden. Welches? Was hätte es werden sollen?</string>
     <string-array name="guest10answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Eine Säge</item>
+        <item name="answer2">Ein Beil</item>
+        <item name="answer3">Ein Messer</item>
     </string-array>
     <integer name="quest10rightanswer">1</integer>
+    <string-array name="guest10explanation">
+        <item name="explanation1">Falsch! Sägen wurden aus hartem Feuerstein (Silex) gemacht und scharf geschliffen. Eine solche Säge hängt auch in der Vitrine.</item>
+        <item name="explanation2">Richtig! Das Loch für den Holzgriff ist nicht durchbrochen. Ein fertiges Beil ist auch ausgestellt – aber ohne Griff. Der ist wohl vermodert.</item>
+        <item name="explanation3">Falsch! Messerklingen wurden aus geschliffenem Feuerstein (Silex) gemacht. In der Vitrine hängt eine Nachmachung mit Griff.</item>
+    </string-array>
 
     <string name="quest11">Wie nennt man die Zeit, aus der all diese Gegenstände stammen?</string>
     <string-array name="guest11answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Jungsteinzeit</item>
+        <item name="answer2">Bronzezeit</item>
+        <item name="answer3">Eisenzeit</item>
     </string-array>
     <integer name="quest11rightanswer">1</integer>
+    <string-array name="guest11explanation">
+        <item name="explanation1">Richtig! Damals waren alle Werkzeuge aus Stein. Die Bearbeitung von Metall noch nicht bekannt.</item>
+        <item name="explanation2">Falsch! Die Bronzezeit kam nach der Steinzeit. Damals, vor 4000 Jahren, wurde erstmals mit Metall (Kupfer und Bronze) gearbeitet.</item>
+        <item name="explanation3">Falsch! Die Eisenzeit begann später, erst vor rund 3000 Jahren.</item>
+    </string-array>
 
 
 
@@ -55,41 +63,49 @@
     <string name="quest20">Dieses bemalte Tuch ist das grösste Objekt im Museum und sehr alt.
         Wann wurde es gemalt? Such die Jahreszahl!</string>
     <string-array name="guest20answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">1612</item>
+        <item name="answer2">1672</item>
     </string-array>
     <integer name="quest20rightanswer">1</integer>
+    <string-array name="guest20explanation">
+        <item name="explanation1">Richtig! Du kannst auch die Anfangsbuchstaben des Malers sehen: JGC für Johann Georg Clessin.</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+    </string-array>
 
     <string name="quest21">Das Tuch wurde früher während der Fastenzeit in der Kirche von Bendern
         aufgehängt. Die Fastenzeit gibt es auch heute noch. Wann beginnt sie?</string>
     <string-array name="guest21answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Vor Weihnachten</item>
+        <item name="answer2">Vor Ostern</item>
     </string-array>
     <integer name="quest21rightanswer">1</integer>
+    <string-array name="guest21explanation">
+        <item name="explanation1">Falsch! Vor Weihnachten wird der Advent gefeiert.</item>
+        <item name="explanation2">Richtig! Die Fastenzeit beginnt am Aschermittwoch und endet 40 Tage später am Tag vor Ostersonntag.</item>
+    </string-array>
 
     <string name="quest22">Das Fastentuch ist eigentlich eine Bibel in Bildern. Warum wurden die
         Geschichten nicht einfach auf das Tuch geschrieben?</string>
     <string-array name="guest22answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Weil damals fast niemand lesen konnte.</item>
+        <item name="answer2">Weil es so viel Platz hatte.</item>
     </string-array>
     <integer name="quest22rightanswer">1</integer>
+    <string-array name="guest22explanation">
+        <item name="explanation1">Richtig!</item>
+        <item name="explanation2">Falsch!</item>
+    </string-array>
 
     <string name="quest23">Wie viele Bilder sind auf dem Fastentuch zu sehen? Zähl sie!</string>
     <string-array name="guest23answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">18</item>
+        <item name="answer2">24</item>
     </string-array>
     <integer name="quest23rightanswer">1</integer>
+    <string-array name="guest23explanation">
+        <item name="explanation1">Falsch! Zähl nochmals!</item>
+        <item name="explanation2">Richtig! Die obersten Bilder erzählen Geschichten aus dem Alten Testament. Die Bilder in der zweiten, dritten und vierten Reihe erzählen von Jesus.</item>
+    </string-array>
 
 
 
@@ -97,22 +113,29 @@
     <string name="quest30">Im Herbst führen die Hirten die Kühe von der Alp zurück ins Tal. Dafür
     werden die Kühe schön geschmückt. Sind alle Kühe geschmückt? Schau dir den Film an!</string>
     <string-array name="guest30answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Ja</item>
+        <item name="answer2">Nein</item>
     </string-array>
     <integer name="quest30rightanswer">1</integer>
+    <string-array name="guest30explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig, nur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
+    </string-array>
 
     <string name="quest31">Ein ganz typischer Schmuck, den es so nur in Liechtenstein gibt, ist das Alpabfahrtsherz. Aus welchem Material ist es gemacht?</string>
     <string-array name="guest31answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Ton</item>
+        <item name="answer2">Holz</item>
+        <item name="answer3">Stein</item>
     </string-array>
     <integer name="quest31rightanswer">1</integer>
+    <string-array name="guest31explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig! Früher haben die Hirten die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
+    <!--
     <string name="quest32">Weisst du, was die Buchstaben JHS auf den Herzen bedeuten? Lies hier weiter!</string>
     <string-array name="guest32answers">
         <item name="answer1">Antwort 1</item>
@@ -121,39 +144,49 @@
         <item name="answer4">Antwort 4</item>
     </string-array>
     <integer name="quest32rightanswer">1</integer>
-
+    -->
 
 
 
     <string name="quest40">Auf jedem Gemälde in diesem Raum siehst du einen Fürsten von
         Liechtenstein. Such den Fürsten mit einem roten, pelzbesetzten Mantel. Wie heisst er?</string>
     <string-array name="guest40answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Johann Adam I. Andreas von Liechtenstein</item>
+        <item name="answer2">Alois II. von Liechtenstein</item>
+        <item name="answer3">Johann II. von Liechtenstein</item>
     </string-array>
     <integer name="quest40rightanswer">1</integer>
+    <string-array name="guest40explanation">
+        <item name="explanation1">Richtig!</item>
+        <item name="explanation2">Falsch!</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
     <string name="quest41">Mit Johann Adam I. Andreas von Liechtenstein kam das heutige
         Fürstentum Liechtenstein in den Besitz der Familie von Liechtenstein. Wie hat er das gemacht?</string>
     <string-array name="guest41answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Er erhielt das Land als Geschenk.</item>
+        <item name="answer2">Er kaufte das Land.</item>
+        <item name="answer3">Er eroberte das Land.</item>
     </string-array>
     <integer name="quest41rightanswer">1</integer>
+    <string-array name="guest41explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig! 1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
     <string name="quest42">Was meinst du, lebten die Fürsten von Liechtenstein damals schon im
         Schloss Vaduz?</string>
     <string-array name="guest42answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Ja</item>
+        <item name="answer2">Nein</item>
     </string-array>
     <integer name="quest42rightanswer">1</integer>
+    <string-array name="guest42explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig! Erst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
+    </string-array>
 
 
 
@@ -161,23 +194,32 @@
     <string name="quest50">Das Buch ist etwa 200 Jahre alt und wurde früher in den Schulen in
         Liechtenstein gelesen. Für was aber wurden die zwei anderen Dinge gebraucht?</string>
     <string-array name="guest50answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Zum Spielen</item>
+        <item name="answer2">Zum Schreiben</item>
+        <item name="answer3">Zum Musizieren</item>
     </string-array>
     <integer name="quest50rightanswer">1</integer>
+    <string-array name="guest50explanation">
+        <item name="explanation1">Nein, nicht unbedingt.</item>
+        <item name="explanation2">Richtig! Mit dem Griffel aus der Griffelschachtel wurde auf die schwarze Schiefertafel geschrieben.</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
 
     <string name="quest51">Was ist Schiefer, das Material, aus dem die Tafel und Griffel gemacht
         wurden?</string>
     <string-array name="guest51answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
+        <item name="answer1">Plastik</item>
+        <item name="answer2">Holz</item>
+        <item name="answer3">Stein</item>
         <item name="answer4">Antwort 4</item>
     </string-array>
     <integer name="quest51rightanswer">1</integer>
+    <string-array name="guest51explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Falsch!</item>
+        <item name="explanation3">Richtig! Schiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
+    </string-array>
 
 
 
@@ -185,22 +227,30 @@
     <string name="quest60">Vor über 200 Millionen Jahren starb ein Nothosaurus und seine Knochen
         versteinerten. Ein Knochen wurde vor 50 Jahren in Schaan gefunden. Welcher?</string>
     <string-array name="guest60answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Oberschenkelknochen</item>
+        <item name="answer2">Zehenknochen</item>
+        <item name="answer3">Rippe</item>
     </string-array>
     <integer name="quest60rightanswer">1</integer>
+    <string-array name="guest60explanation">
+        <item name="explanation1">Richtig, das ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
+        <item name="explanation2">Falsch!</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
     <string name="quest61">Neben dem Knochen siehst du ein Modell eines Nothosaurus. Was meinst
         du, war ein echter Nothosaurus kleiner als das Modell, gleich gross oder grösser?</string>
     <string-array name="guest61answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Kleiner</item>
+        <item name="answer2">Gleich gross</item>
+        <item name="answer3">Grösser</item>
     </string-array>
     <integer name="quest61rightanswer">1</integer>
+    <string-array name="guest61explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Falsch!</item>
+        <item name="explanation3">Richtig. Der Nothosaurus war zwar ein kleiner Saurier, aber doch fast doppelt so gross wie das Modell.</item>
+    </string-array>
 
 
 
@@ -208,30 +258,43 @@
     <string name="quest70">In den Bergen von Liechtenstein leben viele Murmeltiere. Wenn man Glück
         hat, sieht man sie ganz aufrecht im Grass stehen. Worauf stützen sie sich dabei?</string>
     <string-array name="guest70answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Auf ein anderes Murmeltier</item>
+        <item name="answer2">Auf den Schwanz</item>
+        <item name="answer3">Auf eine Blume</item>
     </string-array>
     <integer name="quest70rightanswer">1</integer>
+    <string-array name="guest70explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig. Beim Murmeltier-Skelett kannst du dies besonders gut sehen.</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
+
 
     <string name="quest71">Was machen Murmeltiere eigentlich im Winter?</string>
     <string-array name="guest71answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Sie halten Winterschlaf.</item>
+        <item name="answer2">Das Gleiche wie im Frühjahr, Sommer und Herbst.</item>
+        <item name="answer3">Sie wandern in den Süden.</item>
     </string-array>
     <integer name="quest71rightanswer">1</integer>
+    <string-array name="guest71explanation">
+        <item name="explanation1">Richtig! Murmeltiere machen fast 6 Monate lang Winterschlaf.</item>
+        <item name="explanation2">Falsch!</item>
+        <item name="explanation3">Falsch!</item>
+    </string-array>
 
     <string name="quest72">Was machen Murmeltiere, wenn Gefahr droht?</string>
     <string-array name="guest72answers">
-        <item name="answer1">Antwort 1</item>
-        <item name="answer2">Antwort 2</item>
-        <item name="answer3">Antwort 3</item>
-        <item name="answer4">Antwort 4</item>
+        <item name="answer1">Sie klettern auf einen Baum.</item>
+        <item name="answer2">Sie warnen die anderen durch Pfiffe.</item>
+        <item name="answer3">Sie verstecken sich im Bau.</item>
     </string-array>
     <integer name="quest72rightanswer">1</integer>
+    <string-array name="guest72explanation">
+        <item name="explanation1">Falsch!</item>
+        <item name="explanation2">Richtig! Ein einzelner Pfiff warnt vor einem Feind in der Luft, z. B. vor einem Adler. Mehrere Pfiffe warnen vor einem Bodenfeind, z. B. vor einem Fuchs.</item>
+        <item name="explanation3">Richtig! Nach den Warnpfiffen bringen sich die Murmeltiere in ihrem weit verzweigten Bau in Sicherheit.</item>
+    </string-array>
 
 
 
