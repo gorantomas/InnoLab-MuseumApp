@@ -38,7 +38,7 @@ public class CheckAnswer {
       switch(QuestionNr)
       {
          case 1:
-            if(rb1.isChecked())
+            if(rb2.isChecked())
                returnValue = true;
             break;
          case 2:
@@ -50,11 +50,63 @@ public class CheckAnswer {
                returnValue = true;
             break;
          case 4:
-            if(rb1.isChecked())
+            if(rb2.isChecked())
                returnValue = true;
             break;
          case 5:
             if(rb1.isChecked())
+               returnValue = true;
+            break;
+         case 6:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 7:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 8:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 9:
+            if(rb1.isChecked())
+               returnValue = true;
+            break;
+         case 10:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 11:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 12:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 13:
+            if(rb3.isChecked())
+               returnValue = true;
+            break;
+         case 14:
+            if(rb1.isChecked())
+               returnValue = true;
+            break;
+         case 15:
+            if(rb3.isChecked())
+               returnValue = true;
+            break;
+         case 16:
+            if(rb2.isChecked())
+               returnValue = true;
+            break;
+         case 17:
+            if(rb1.isChecked())
+               returnValue = true;
+            break;
+         case 18:
+            if(rb2.isChecked() || rb3.isChecked())
                returnValue = true;
             break;
          default:
