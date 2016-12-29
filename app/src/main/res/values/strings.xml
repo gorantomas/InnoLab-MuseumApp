@@ -16,7 +16,6 @@
     <integer name="pointSubQuestion">1</integer>
     <string name="maxPoints">2</string>
 
-
     <string-array name="questions">
         <item name="quest1">Station 1</item>
         <item name="quest2">Station 2</item>
