@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 public class CheckAnswer {
 
    Context context;
-   RadioButton rb1, rb2, rb3, rb4;
+   RadioButton rb1, rb2, rb3;
    boolean returnValue = false;
    Activity mainActivity;
    EditText editText;
@@ -24,14 +24,14 @@ public class CheckAnswer {
    private void findButtons(Activity activity){
 
       rb1 = (RadioButton) activity.findViewById(R.id.rB1);
-      rb2 = (RadioButton) activity.findViewById(R.id.rB1);
-      rb3 = (RadioButton) activity.findViewById(R.id.rB1);
-      rb4 = (RadioButton) activity.findViewById(R.id.rB1);
+      rb2 = (RadioButton) activity.findViewById(R.id.rB2);
+      rb3 = (RadioButton) activity.findViewById(R.id.rB3);
+
    }
 
-   private void findVariables(Activity activity){
-      editText = (EditText) activity.findViewById(R.id.editText);
-   }
+//   private void findVariables(Activity activity){
+//      editText = (EditText) activity.findViewById(R.id.editText);
+//   }
 
    public boolean getChoosedAnswer(Activity activity, int QuestionNr){
       findButtons(activity);
@@ -117,13 +117,13 @@ public class CheckAnswer {
 
    }
 
-   public boolean getTypedAnswer(Activity activity, int QuestionNr){
-      findVariables(activity);
-      String typedText = editText.getText().toString().trim().toLowerCase();
-      // compare typedtext to getResources.getString (QuestionNr)
-      // if typedtext contains the string from xml -> return true
-
-      return returnValue;
-   }
+//   public boolean getTypedAnswer(Activity activity, int QuestionNr){
+//      findVariables(activity);
+//      String typedText = editText.getText().toString().trim().toLowerCase();
+//      // compare typedtext to getResources.getString (QuestionNr)
+//      // if typedtext contains the string from xml -> return true
+//
+//      return returnValue;
+//   }
 
 }

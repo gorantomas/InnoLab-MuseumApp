@@ -35,7 +35,7 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
 
       this.questionTitle = questionTitle;
       maxPoints = context.getResources().getString(R.string.maxPoints);
-      maxAllPoints = context.getResources().getInteger(R.integer.pointMainQuestion) * mainQuestion.size() * 2;
+      maxAllPoints = mainQuestion.size();
    }
 
    public View getView(int position, View convertView, final ViewGroup parent){
@@ -61,16 +61,94 @@ public class ResultRowAdapter extends ArrayAdapter<String> {
 
       viewHolder.station.setText(questionTitle[position].toString());
 
-      if(position<(mainQuestion.size()-1))
-      {
-         if(mainQuestion.get(position))
-            actPoints += context.getResources().getInteger(R.integer.pointMainQuestion);
 
 
-         allPoints += actPoints;
-         viewHolder.points.setText(actPoints + " von " + maxPoints);
+      if(position==0)
+      { //10 + 11
+         for(int i=0;i<=1;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 2");
       }
-      else if(position==(mainQuestion.size()))
+      else if(position==1)
+      { //20 + 21 ++ 22 + 23
+         for(int i=2;i<=5;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 4");
+      }
+      else if(position==2)
+      { //30 + 31
+         for(int i=6;i<=7;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 2");
+      }
+      else if(position==3)
+      {//40 + 41 + 42
+         for(int i=8;i<=10;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 3");
+      }
+      else if(position==4)
+      {//50 + 51
+         for(int i=11;i<=12;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 2");
+      }
+      else if(position==5)
+      {//60 + 61
+         for(int i=13;i<=14;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 2");
+      }
+      else if(position==6)
+      {//70 + 71 + 72
+         for(int i=15;i<=17;i++)
+         {
+            if(mainQuestion.get(i))
+            {
+               actPoints += 1;
+               allPoints += 1;
+            }
+         }
+         viewHolder.points.setText(actPoints + " von 3");
+      }
+
+      else if(position == 7)
          viewHolder.points.setText("");
       else
          viewHolder.points.setText(allPoints + " von " + maxAllPoints);

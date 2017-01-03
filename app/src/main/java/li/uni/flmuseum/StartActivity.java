@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 /**
  * Created by jaha on 02.11.2016.
@@ -18,12 +19,19 @@ import android.widget.RadioButton;
 
 public class StartActivity extends Activity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, TextWatcher, View.OnFocusChangeListener {
 
-   private Button buttonStart;
+   private Button buttonStart, buttonNext;
    private RadioButton radioButtonMale, radioButtonFemale;
    private EditText editTextName;
+   private int state = -1;
+   private String name;
 
    @Override protected void onCreate(Bundle savedInstanceState){
       super.onCreate(savedInstanceState);
+      setStartVariables();
+
+   }
+
+   private void setStartVariables(){
       setContentView(R.layout.start);
       buttonStart = (Button) findViewById(R.id.button_start);
       buttonStart.setOnClickListener(this);
@@ -33,12 +41,34 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
       radioButtonFemale.setOnCheckedChangeListener(this);
       editTextName = (EditText) findViewById(R.id.editTextName);
       editTextName.setOnFocusChangeListener(this);
+      state = 0;
+   }
+
+   private void setWelcomeScreen(){
+      //setContentView mit Schriftrolle und text
+      // willkommenstext mit namen
+      // button für weiter
+      setContentView(R.layout.act_route);
+      buttonNext = (Button) findViewById(R.id.routeNext);
+      buttonNext.setOnClickListener(this);
+      TextView textView = (TextView) findViewById(R.id.textView4);
+      textView.setText("Hallo " + name);
+      state = 1;
 
    }
 
    public void onClick(View view){
-      Intent intent = new Intent(StartActivity.this, MainActivity.class);
-      startActivity(intent);
+      //      TODO zuerst noch willkommenstext anzeigen und dann das Spiel starten
+      if(state == 0)
+      {
+         name = editTextName.getText().toString();
+         setWelcomeScreen();
+      }
+      else
+      {
+         Intent intent = new Intent(StartActivity.this, MainActivity.class);
+         startActivity(intent);
+      }
    }
 
    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
