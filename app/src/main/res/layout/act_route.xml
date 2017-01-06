@@ -25,7 +25,7 @@
         Beschreibung wie die Station gefunden wird. Hier steht die ausführliche Beschreibung"
         android:textSize="24sp"
         android:gravity="top|center"
-        android:paddingTop="60dp"/>
+        android:paddingTop="65dp"/>
 
     <Button
         android:id="@+id/routeNext"
