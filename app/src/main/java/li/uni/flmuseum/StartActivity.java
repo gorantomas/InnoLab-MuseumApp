@@ -58,7 +58,7 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
    }
 
    public void onClick(View view){
-      //      TODO zuerst noch willkommenstext anzeigen und dann das Spiel starten
+      // zuerst noch willkommenstext anzeigen und dann das Spiel starten
       if(state == 0)
       {
          name = editTextName.getText().toString();

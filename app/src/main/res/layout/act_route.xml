@@ -16,16 +16,16 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/routeNext"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:paddingLeft="45dp"
         android:paddingRight="45dp"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. Hier steht die ausführliche
         Beschreibung wie die Station gefunden wird. Hier steht die ausführliche Beschreibung"
         android:textSize="24sp"
-        android:gravity="top|center"
-        android:paddingTop="65dp"/>
+       android:layout_marginBottom="30dp"
+        android:gravity="top|center_horizontal"
+        android:layout_above="@+id/imageView3"/>
 
     <Button
         android:id="@+id/routeNext"
@@ -43,7 +43,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/mouse2"
+        android:src="@drawable/mouse"
         android:layout_marginBottom="43dp"
         android:layout_alignBottom="@+id/routeNext"
         android:layout_alignParentEnd="true" />
