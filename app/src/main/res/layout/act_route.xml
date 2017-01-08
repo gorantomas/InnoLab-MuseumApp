@@ -20,8 +20,7 @@
         android:layout_centerHorizontal="true"
         android:paddingLeft="45dp"
         android:paddingRight="45dp"
-        android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. Hier steht die ausführliche
-        Beschreibung wie die Station gefunden wird. Hier steht die ausführliche Beschreibung"
+        android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
         android:textSize="24sp"
        android:layout_marginBottom="30dp"
         android:gravity="top|center_horizontal"
