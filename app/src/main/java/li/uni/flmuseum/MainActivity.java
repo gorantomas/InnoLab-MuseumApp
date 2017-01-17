@@ -36,7 +36,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
    Button routeNext, mainquestNext, answerNext;
    RadioButton[] radioButtons;
    String[] mainQuestAnswers;
-   TextView tv_mainQuest, tv_route, tv_answerNext;
+   TextView tv_mainQuest, tv_route, tv_answerNext, tv_routerNumber, tv_answerNumber, tv_questionNumber;
    CheckAnswer checkAnswer;
    Resources res;
 
@@ -915,11 +915,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 
    private void setTitleRoute(String Route){
       setTitle("Station " + Route);
+      tv_routerNumber.setText("Station " + Route);
    }
 
    private void setTitleQuestion(){
       questionCounter += 1;
       setTitle("Frage " + questionCounter + " von " + questionsArray.length);
+      tv_questionNumber.setText("Frage " + questionCounter + " von " + questionsArray.length);
+
    }
 
    private void setMainQuestionVariables(){
@@ -927,6 +930,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       mainquestNext.setOnClickListener(this);
       mainquestNext.setVisibility(View.INVISIBLE);
       tv_mainQuest = (TextView) findViewById(R.id.textView3);
+      tv_questionNumber=(TextView) findViewById(R.id.tv_questionNumber);
       mainQuestAnswers = new String[4];
       radioButtons = new RadioButton[3];
       for(int i = 0; i<radioButtons.length; i++)
@@ -951,6 +955,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       tv_route = (TextView) findViewById(R.id.textView4);
       //      tv_route.setMovementMethod(new ScrollingMovementMethod());
       popupWindow = null;
+      tv_routerNumber = (TextView) findViewById(R.id.tv_routeNumber);
    }
 
    private void setAnswerVariables(){
@@ -959,6 +964,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       answerNext.setOnClickListener(this);
       answerNext.setText("Weiter");
       tv_answerNext = (TextView) findViewById(R.id.tV_answer);
+      tv_answerNumber = (TextView) findViewById(R.id.tV_answerNumber);
+      tv_answerNumber.setText("Frage " + questionCounter + " von " + questionsArray.length);
    }
 
 }

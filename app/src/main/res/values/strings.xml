@@ -42,9 +42,10 @@
     </string-array>
     <integer name="quest10rightanswer">1</integer>
     <string-array name="guest10explanation">
-        <item name="explanation1">Falsch! Sägen wurden aus hartem Feuerstein (Silex) gemacht und scharf geschliffen. Eine solche Säge hängt auch in der Vitrine.</item>
-        <item name="explanation2">Richtig! Das Loch für den Holzgriff ist nicht durchbrochen. Ein fertiges Beil ist auch ausgestellt – aber ohne Griff. Der ist wohl vermodert.</item>
-        <item name="explanation3">Falsch! Messerklingen wurden aus geschliffenem Feuerstein (Silex) gemacht. In der Vitrine hängt eine Nachmachung mit Griff.</item>
+        <item name="explanation1">Falsch!\nSägen wurden aus hartem Feuerstein (Silex) gemacht und
+            scharf geschliffen. Eine solche Säge hängt auch in der Vitrine.</item>
+        <item name="explanation2">Richtig!\nDas Loch für den Holzgriff ist nicht durchbrochen. Ein fertiges Beil ist auch ausgestellt – aber ohne Griff. Der ist wohl vermodert.</item>
+        <item name="explanation3">Falsch!\nMesserklingen wurden aus geschliffenem Feuerstein (Silex) gemacht. In der Vitrine hängt eine Nachmachung mit Griff.</item>
     </string-array>
 
     <string name="quest11">Wie nennt man die Zeit, aus der all diese Gegenstände stammen?</string>
@@ -55,9 +56,9 @@
     </string-array>
     <integer name="quest11rightanswer">1</integer>
     <string-array name="guest11explanation">
-        <item name="explanation1">Richtig! Damals waren alle Werkzeuge aus Stein. Die Bearbeitung von Metall noch nicht bekannt.</item>
-        <item name="explanation2">Falsch! Die Bronzezeit kam nach der Steinzeit. Damals, vor 4000 Jahren, wurde erstmals mit Metall (Kupfer und Bronze) gearbeitet.</item>
-        <item name="explanation3">Falsch! Die Eisenzeit begann später, erst vor rund 3000 Jahren.</item>
+        <item name="explanation1">Richtig!\nDamals waren alle Werkzeuge aus Stein. Die Bearbeitung von Metall noch nicht bekannt.</item>
+        <item name="explanation2">Falsch!\nDie Bronzezeit kam nach der Steinzeit. Damals, vor 4000 Jahren, wurde erstmals mit Metall (Kupfer und Bronze) gearbeitet.</item>
+        <item name="explanation3">Falsch!\nDie Eisenzeit begann später, erst vor rund 3000 Jahren.</item>
     </string-array>
 
 
@@ -72,8 +73,8 @@
     </string-array>
     <integer name="quest20rightanswer">1</integer>
     <string-array name="guest20explanation">
-        <item name="explanation1">Richtig! Du kannst auch die Anfangsbuchstaben des Malers sehen: JGC für Johann Georg Clessin.</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Richtig!\nDu kannst auch die Anfangsbuchstaben des Malers sehen: JGC für Johann Georg Clessin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest21">Das Tuch wurde früher während der Fastenzeit in der Kirche von Bendern
@@ -85,8 +86,8 @@
     </string-array>
     <integer name="quest21rightanswer">1</integer>
     <string-array name="guest21explanation">
-        <item name="explanation1">Falsch! Vor Weihnachten wird der Advent gefeiert.</item>
-        <item name="explanation2">Richtig! Die Fastenzeit beginnt am Aschermittwoch und endet 40 Tage später am Tag vor Ostersonntag.</item>
+        <item name="explanation1">Falsch!\nVor Weihnachten wird der Advent gefeiert.</item>
+        <item name="explanation2">Richtig!\nDie Fastenzeit beginnt am Aschermittwoch und endet 40 Tage später am Tag vor Ostersonntag.</item>
     </string-array>
 
     <string name="quest22">Das Fastentuch ist eigentlich eine Bibel in Bildern. Warum wurden die
@@ -99,7 +100,7 @@
     <integer name="quest22rightanswer">1</integer>
     <string-array name="guest22explanation">
         <item name="explanation1">Richtig!</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest23">Wie viele Bilder sind auf dem Fastentuch zu sehen? Zähl sie!</string>
@@ -110,8 +111,8 @@
     </string-array>
     <integer name="quest23rightanswer">1</integer>
     <string-array name="guest23explanation">
-        <item name="explanation1">Falsch! Zähl nochmals!</item>
-        <item name="explanation2">Richtig! Die obersten Bilder erzählen Geschichten aus dem Alten Testament. Die Bilder in der zweiten, dritten und vierten Reihe erzählen von Jesus.</item>
+        <item name="explanation1">Falsch!\nZähl nochmals!</item>
+        <item name="explanation2">Richtig!\nDie obersten Bilder erzählen Geschichten aus dem Alten Testament. Die Bilder in der zweiten, dritten und vierten Reihe erzählen von Jesus.</item>
     </string-array>
 
 
@@ -126,8 +127,8 @@
     </string-array>
     <integer name="quest30rightanswer">1</integer>
     <string-array name="guest30explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig, nur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig,\n nur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
     </string-array>
 
     <string name="quest31">Ein ganz typischer Schmuck, den es so nur in Liechtenstein gibt, ist das Alpabfahrtsherz. Aus welchem Material ist es gemacht?</string>
@@ -138,9 +139,9 @@
     </string-array>
     <integer name="quest31rightanswer">1</integer>
     <string-array name="guest31explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig! Früher haben die Hirten die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\nFrüher haben die Hirten die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
+        <item name="explanation3">Falsch! \nchau nochmals gut hin.</item>
     </string-array>
 
     <!--
@@ -166,8 +167,8 @@
     <integer name="quest40rightanswer">1</integer>
     <string-array name="guest40explanation">
         <item name="explanation1">Richtig!</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest41">Mit Johann Adam I. Andreas von Liechtenstein kam das heutige
@@ -179,9 +180,9 @@
     </string-array>
     <integer name="quest41rightanswer">1</integer>
     <string-array name="guest41explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig! 1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\n1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest42">Was meinst du, lebten die Fürsten von Liechtenstein damals schon im
@@ -193,8 +194,8 @@
     </string-array>
     <integer name="quest42rightanswer">1</integer>
     <string-array name="guest42explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig! Erst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\nErst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
     </string-array>
 
 
@@ -210,8 +211,8 @@
     <integer name="quest50rightanswer">1</integer>
     <string-array name="guest50explanation">
         <item name="explanation1">Nein, nicht unbedingt.</item>
-        <item name="explanation2">Richtig! Mit dem Griffel aus der Griffelschachtel wurde auf die schwarze Schiefertafel geschrieben.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\nMit dem Griffel aus der Griffelschachtel wurde auf die schwarze Schiefertafel geschrieben.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
 
@@ -224,9 +225,9 @@
     </string-array>
     <integer name="quest51rightanswer">1</integer>
     <string-array name="guest51explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation3">Richtig! Schiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Richtig!\nSchiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
     </string-array>
 
 
@@ -241,9 +242,9 @@
     </string-array>
     <integer name="quest60rightanswer">1</integer>
     <string-array name="guest60explanation">
-        <item name="explanation1">Richtig, das ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Richtig,\n das ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest61">Neben dem Knochen siehst du ein Modell eines Nothosaurus. Was meinst
@@ -255,9 +256,10 @@
     </string-array>
     <integer name="quest61rightanswer">1</integer>
     <string-array name="guest61explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation3">Richtig. Der Nothosaurus war zwar ein kleiner Saurier, aber doch fast doppelt so gross wie das Modell.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Richtig!\nDer Nothosaurus war zwar ein kleiner Saurier, aber
+            doch fast doppelt so gross wie das Modell.</item>
     </string-array>
 
 
@@ -272,9 +274,10 @@
     </string-array>
     <integer name="quest70rightanswer">1</integer>
     <string-array name="guest70explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig. Beim Murmeltier-Skelett kannst du dies besonders gut sehen.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\nBeim Murmeltier-Skelett kannst du dies besonders gut
+            sehen.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
 
@@ -286,9 +289,9 @@
     </string-array>
     <integer name="quest71rightanswer">1</integer>
     <string-array name="guest71explanation">
-        <item name="explanation1">Richtig! Murmeltiere machen fast 6 Monate lang Winterschlaf.</item>
-        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation1">Richtig!\nMurmeltiere machen fast 6 Monate lang Winterschlaf.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest72">Was machen Murmeltiere, wenn Gefahr droht?</string>
@@ -299,9 +302,9 @@
     </string-array>
     <integer name="quest72rightanswer">1</integer>
     <string-array name="guest72explanation">
-        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
-        <item name="explanation2">Richtig! Ein einzelner Pfiff warnt vor einem Feind in der Luft, z. B. vor einem Adler. Mehrere Pfiffe warnen vor einem Bodenfeind, z. B. vor einem Fuchs.</item>
-        <item name="explanation3">Richtig! Nach den Warnpfiffen bringen sich die Murmeltiere in ihrem weit verzweigten Bau in Sicherheit.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Richtig!\nEin einzelner Pfiff warnt vor einem Feind in der Luft, z. B. vor einem Adler. Mehrere Pfiffe warnen vor einem Bodenfeind, z. B. vor einem Fuchs.</item>
+        <item name="explanation3">Richtig!\nNach den Warnpfiffen bringen sich die Murmeltiere in ihrem weit verzweigten Bau in Sicherheit.</item>
     </string-array>
 
 

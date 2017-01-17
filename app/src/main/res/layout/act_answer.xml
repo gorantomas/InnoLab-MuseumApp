@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView6"
+        android:id="@+id/tV_answerNumber"
         android:textSize="24sp" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:textColor="@android:color/background_dark"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
         android:textSize="24sp"
-        android:layout_below="@+id/textView6"
+        android:layout_below="@+id/tV_answerNumber"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:paddingLeft="5dp"
