@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LLM</string>
+    <string name="app_name">LLM Kinderquiz</string>
     <string name="mann">Forscher</string>
     <string name="frau">Forscherin</string>
 
@@ -99,7 +99,7 @@
     <integer name="quest22rightanswer">1</integer>
     <string-array name="guest22explanation">
         <item name="explanation1">Richtig!</item>
-        <item name="explanation2">Falsch!</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest23">Wie viele Bilder sind auf dem Fastentuch zu sehen? Zähl sie!</string>
@@ -126,7 +126,7 @@
     </string-array>
     <integer name="quest30rightanswer">1</integer>
     <string-array name="guest30explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig, nur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
     </string-array>
 
@@ -138,9 +138,9 @@
     </string-array>
     <integer name="quest31rightanswer">1</integer>
     <string-array name="guest31explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig! Früher haben die Hirten die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <!--
@@ -166,8 +166,8 @@
     <integer name="quest40rightanswer">1</integer>
     <string-array name="guest40explanation">
         <item name="explanation1">Richtig!</item>
-        <item name="explanation2">Falsch!</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest41">Mit Johann Adam I. Andreas von Liechtenstein kam das heutige
@@ -179,9 +179,9 @@
     </string-array>
     <integer name="quest41rightanswer">1</integer>
     <string-array name="guest41explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig! 1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest42">Was meinst du, lebten die Fürsten von Liechtenstein damals schon im
@@ -193,7 +193,7 @@
     </string-array>
     <integer name="quest42rightanswer">1</integer>
     <string-array name="guest42explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig! Erst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
     </string-array>
 
@@ -211,7 +211,7 @@
     <string-array name="guest50explanation">
         <item name="explanation1">Nein, nicht unbedingt.</item>
         <item name="explanation2">Richtig! Mit dem Griffel aus der Griffelschachtel wurde auf die schwarze Schiefertafel geschrieben.</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
 
@@ -224,8 +224,8 @@
     </string-array>
     <integer name="quest51rightanswer">1</integer>
     <string-array name="guest51explanation">
-        <item name="explanation1">Falsch!</item>
-        <item name="explanation2">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation3">Richtig! Schiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
     </string-array>
 
@@ -242,8 +242,8 @@
     <integer name="quest60rightanswer">1</integer>
     <string-array name="guest60explanation">
         <item name="explanation1">Richtig, das ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
-        <item name="explanation2">Falsch!</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest61">Neben dem Knochen siehst du ein Modell eines Nothosaurus. Was meinst
@@ -255,8 +255,8 @@
     </string-array>
     <integer name="quest61rightanswer">1</integer>
     <string-array name="guest61explanation">
-        <item name="explanation1">Falsch!</item>
-        <item name="explanation2">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation3">Richtig. Der Nothosaurus war zwar ein kleiner Saurier, aber doch fast doppelt so gross wie das Modell.</item>
     </string-array>
 
@@ -272,9 +272,9 @@
     </string-array>
     <integer name="quest70rightanswer">1</integer>
     <string-array name="guest70explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig. Beim Murmeltier-Skelett kannst du dies besonders gut sehen.</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
 
@@ -287,8 +287,8 @@
     <integer name="quest71rightanswer">1</integer>
     <string-array name="guest71explanation">
         <item name="explanation1">Richtig! Murmeltiere machen fast 6 Monate lang Winterschlaf.</item>
-        <item name="explanation2">Falsch!</item>
-        <item name="explanation3">Falsch!</item>
+        <item name="explanation2">Falsch! Schau nochmals gut hin.</item>
+        <item name="explanation3">Falsch! Schau nochmals gut hin.</item>
     </string-array>
 
     <string name="quest72">Was machen Murmeltiere, wenn Gefahr droht?</string>
@@ -299,7 +299,7 @@
     </string-array>
     <integer name="quest72rightanswer">1</integer>
     <string-array name="guest72explanation">
-        <item name="explanation1">Falsch!</item>
+        <item name="explanation1">Falsch! Schau nochmals gut hin.</item>
         <item name="explanation2">Richtig! Ein einzelner Pfiff warnt vor einem Feind in der Luft, z. B. vor einem Adler. Mehrere Pfiffe warnen vor einem Bodenfeind, z. B. vor einem Fuchs.</item>
         <item name="explanation3">Richtig! Nach den Warnpfiffen bringen sich die Murmeltiere in ihrem weit verzweigten Bau in Sicherheit.</item>
     </string-array>
