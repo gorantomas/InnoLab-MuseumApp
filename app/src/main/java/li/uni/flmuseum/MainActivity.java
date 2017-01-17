@@ -65,7 +65,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
    }
 
    private void imagezoom(final int Resource){
-      final ImageView btnOpenPopup = (ImageView) findViewById(R.id.imageView3);
+      final ImageView btnOpenPopup = (ImageView) findViewById(R.id.imageView2);
+      btnOpenPopup.setImageResource(Resource);
       btnOpenPopup.setOnClickListener(new Button.OnClickListener() {
 
          @Override public void onClick(View arg0){
@@ -149,6 +150,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setRouteVariables();
             tv_route.setText(getString(R.string.route5));
             //            curQuestion = 50;
+            //            imagezoom(R.drawable.schifertafel);
             setTitleRoute("5");
             nextRoute = 60;
             break;
@@ -212,6 +214,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest10));
             setTitleQuestion();
+            imagezoom(R.drawable.steinbeil);
             answ = getResources().getStringArray(R.array.guest10answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -227,6 +230,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 20;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.steinbeil);
             tv_mainQuest.setText(getString(R.string.quest11));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest11answers);
@@ -246,6 +250,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest20));
             setTitleQuestion();
+            imagezoom(R.drawable.fastentuch);
             answ = getResources().getStringArray(R.array.guest20answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -260,6 +265,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 22;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.fastentuch);
             tv_mainQuest.setText(getString(R.string.quest21));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest21answers);
@@ -276,6 +282,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 23;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.fastentuch);
             tv_mainQuest.setText(getString(R.string.quest22));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest22answers);
@@ -292,6 +299,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 30;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.fastentuch);
             tv_mainQuest.setText(getString(R.string.quest23));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest23answers);
@@ -311,6 +319,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest30));
             setTitleQuestion();
+            imagezoom(R.drawable.wand_alpabfahrtsherz);
             answ = getResources().getStringArray(R.array.guest30answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -325,6 +334,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 40;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.wand_alpabfahrtsherz);
             tv_mainQuest.setText(getString(R.string.quest31));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest31answers);
@@ -354,6 +364,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest40));
             setTitleQuestion();
+            imagezoom(R.drawable.fuerst_johann);
             answ = getResources().getStringArray(R.array.guest40answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -368,6 +379,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 42;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.fuerst_johann);
             tv_mainQuest.setText(getString(R.string.quest41));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest41answers);
@@ -384,6 +396,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 50;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.fuerst_johann);
             tv_mainQuest.setText(getString(R.string.quest42));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest42answers);
@@ -403,6 +416,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest50));
             setTitleQuestion();
+            imagezoom(R.drawable.schifertafel);
             answ = getResources().getStringArray(R.array.guest50answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -417,6 +431,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 60;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.schifertafel);
             tv_mainQuest.setText(getString(R.string.quest51));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest51answers);
@@ -437,6 +452,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest60));
             setTitleQuestion();
+            imagezoom(R.drawable.oberschenkelknochen);
             answ = getResources().getStringArray(R.array.guest60answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -451,6 +467,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 70;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.oberschenkelknochen);
             tv_mainQuest.setText(getString(R.string.quest61));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest61answers);
@@ -470,6 +487,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setMainQuestionVariables();
             tv_mainQuest.setText(getString(R.string.quest70));
             setTitleQuestion();
+            imagezoom(R.drawable.murmeltier);
             answ = getResources().getStringArray(R.array.guest70answers);
             for(int i = 0; i<radioButtons.length; i++)
             {
@@ -484,6 +502,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 72;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.murmeltier);
             tv_mainQuest.setText(getString(R.string.quest71));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest71answers);
@@ -500,6 +519,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             nextQuestion = 99;
             setContentView(R.layout.act_mainquestion);
             setMainQuestionVariables();
+            imagezoom(R.drawable.murmeltier);
             tv_mainQuest.setText(getString(R.string.quest72));
             setTitleQuestion();
             answ = getResources().getStringArray(R.array.guest72answers);
@@ -599,7 +619,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
          case 20:
             answers = getResources().getStringArray(R.array.guest20explanation);
@@ -612,7 +632,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 21:
             answers = getResources().getStringArray(R.array.guest21explanation);
@@ -625,7 +645,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 22:
             answers = getResources().getStringArray(R.array.guest22explanation);
@@ -633,7 +653,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             {
                b_mainQuestion[tempQuestionCounter] = true;
             }
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 23:
             answers = getResources().getStringArray(R.array.guest23explanation);
@@ -646,7 +666,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
          case 30:
             answers = getResources().getStringArray(R.array.guest30explanation);
@@ -659,7 +679,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 31:
             answers = getResources().getStringArray(R.array.guest31explanation);
@@ -672,7 +692,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
 
          case 40:
@@ -681,7 +701,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             {
                b_mainQuestion[tempQuestionCounter] = true;
             }
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 41:
             answers = getResources().getStringArray(R.array.guest41explanation);
@@ -694,7 +714,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 42:
             answers = getResources().getStringArray(R.array.guest42explanation);
@@ -707,7 +727,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
          case 50:
             answers = getResources().getStringArray(R.array.guest50explanation);
@@ -720,7 +740,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 51:
             answers = getResources().getStringArray(R.array.guest51explanation);
@@ -733,7 +753,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
          case 60:
             answers = getResources().getStringArray(R.array.guest60explanation);
@@ -746,7 +766,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 61:
             answers = getResources().getStringArray(R.array.guest61explanation);
@@ -759,7 +779,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
          case 70:
             answers = getResources().getStringArray(R.array.guest70explanation);
@@ -772,7 +792,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 71:
             answers = getResources().getStringArray(R.array.guest71explanation);
@@ -785,7 +805,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-            switchQuestion(nextQuestion);
+//            switchQuestion(nextQuestion);
             break;
          case 72:
             answers = getResources().getStringArray(R.array.guest72explanation);
@@ -801,7 +821,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-            switchRoute(nextRoute);
+//            switchRoute(nextRoute);
             break;
 
          default:
@@ -930,7 +950,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       mainquestNext.setOnClickListener(this);
       mainquestNext.setVisibility(View.INVISIBLE);
       tv_mainQuest = (TextView) findViewById(R.id.textView3);
-      tv_questionNumber=(TextView) findViewById(R.id.tv_questionNumber);
+      tv_questionNumber = (TextView) findViewById(R.id.tv_questionNumber);
       mainQuestAnswers = new String[4];
       radioButtons = new RadioButton[3];
       for(int i = 0; i<radioButtons.length; i++)
@@ -939,7 +959,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
          radioButtons[i] = (RadioButton) findViewById(res.getIdentifier(b, "id", getPackageName()));
          radioButtons[i].setOnCheckedChangeListener(this);
       }
-
+      popupWindow = null;
    }
 
    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
