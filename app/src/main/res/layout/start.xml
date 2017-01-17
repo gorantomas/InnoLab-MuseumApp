@@ -2,17 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/schriftrolle"
+              android:background="@drawable/background"
               android:orientation="vertical"
-              android:weightSum="1">
+              android:weightSum="1"
+    android:elevation="0dp">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="211dp"
         android:gravity="center"
-        android:text="Willkomen im\nLandesmuseum\nLiechtenstein"
-        android:textSize="32sp"/>
+        android:text="Willkomen im\nLiechtensteinischem\nLandesmuseum"
+        android:textSize="32sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold|italic" />
 
     <ImageView
         android:id="@+id/imageView"

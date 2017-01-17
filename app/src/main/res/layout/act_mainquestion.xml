@@ -3,24 +3,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:baselineAligned="false"
-                android:orientation="vertical">
+                android:orientation="vertical"
+    android:background="@drawable/background">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:baselineAligned="false"
-                    android:orientation="vertical"
-                    android:background="@drawable/schriftrolle"
-                    android:layout_above="@+id/mainQuestNext">
-
-
-        <TextView
+    <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
-
+            android:textColor="@android:color/background_dark"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corner2"
             android:gravity="center"
@@ -29,16 +21,17 @@
             android:paddingRight="5dp"
             android:paddingTop="15dp"
             android:text="@string/quest10"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="15dp"
-            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="false"
             android:layout_alignStart="@+id/textView3"
-            android:layout_alignEnd="@+id/textView3">
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_above="@+id/mainQuestNext">
 
             <RadioButton
                 android:id="@+id/rB1"
@@ -58,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/radiobuttonstyle"
                 android:button="@android:color/transparent"
                 android:gravity="center_vertical"
@@ -72,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/radiobuttonstyle"
                 android:button="@android:color/transparent"
                 android:gravity="center_vertical"
@@ -83,7 +76,6 @@
 
         </RadioGroup>
 
-    </RelativeLayout>
 
     <Button
         android:id="@+id/mainQuestNext"
@@ -91,10 +83,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
         android:layout_weight="0.15"
-        android:background="@drawable/arrow_right"
-        android:text="Weiter"/>
+        android:background="@drawable/next"
+        android:text="Weiter"
+        android:textStyle="normal|bold" />
 </RelativeLayout>

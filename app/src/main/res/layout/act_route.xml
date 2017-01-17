@@ -2,42 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"    >
+                android:orientation="vertical"
+    android:background="@drawable/background">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/routeNext"
-        android:layout_marginTop="-10dp"
-        android:contentDescription="Schriftrolle"
-        android:src="@drawable/schriftrolle"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="match_parent"
         android:layout_above="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
         android:gravity="top|center_horizontal"
-        android:paddingLeft="45dp"
-        android:paddingRight="45dp"
         android:scrollbars = "vertical"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
-        android:textSize="24sp"/>
-
-    <Button
-        android:id="@+id/routeNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView6"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/arrow_right"
-        android:text="Weiter"/>
+        android:layout_marginStart="20dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -47,7 +37,23 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="43dp"
         android:contentDescription="Maus"
-        android:src="@drawable/mouse"/>
+        android:src="@drawable/mouse"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/routeNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/next"
+        android:text="Weiter"
+        android:textSize="19sp"
+        android:textStyle="normal|bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
 
 
 </RelativeLayout>
