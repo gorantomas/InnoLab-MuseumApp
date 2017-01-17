@@ -30,6 +30,15 @@
         android:textSize="24sp"/>
 
 
+    <ImageView
+        android:src="@drawable/steinbeil"
+        android:layout_width="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
