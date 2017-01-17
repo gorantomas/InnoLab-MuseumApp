@@ -26,6 +26,7 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
    private EditText editTextName;
    private int state = -1;
    private String name;
+   private TextView textView;
 
    @Override protected void onCreate(Bundle savedInstanceState){
       super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
       editTextName = (EditText) findViewById(R.id.editTextName);
       editTextName.setOnFocusChangeListener(this);
       state = 0;
+      textView = (TextView)findViewById(R.id.textView2);
    }
 
    private void setWelcomeScreen(){
@@ -79,6 +81,8 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
          case R.id.checkBoxFemale:
             if(isChecked)
             {
+               textView.setVisibility(View.VISIBLE);
+               editTextName.setVisibility(View.VISIBLE);
                editTextName.requestFocus();
                editTextName.addTextChangedListener(this);
             }
@@ -86,6 +90,8 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
          case R.id.checkBoxMale:
             if(isChecked)
             {
+               textView.setVisibility(View.VISIBLE);
+               editTextName.setVisibility(View.VISIBLE);
                editTextName.requestFocus();
                editTextName.addTextChangedListener(this);
             }
