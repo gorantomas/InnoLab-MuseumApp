@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:baselineAligned="false"
                 android:orientation="vertical"
     android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/textView5" />
 
     <TextView
             android:id="@+id/textView3"
@@ -13,15 +20,15 @@
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:textColor="@android:color/background_dark"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_corner2"
+        android:background="@drawable/rounded_corner2"
             android:gravity="center"
             android:paddingBottom="15dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:paddingTop="15dp"
             android:text="@string/quest10"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+        android:layout_below="@+id/textView5" />
 
 
         <RadioGroup
@@ -44,7 +51,7 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="Antwort 1"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rB2"

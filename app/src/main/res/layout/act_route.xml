@@ -20,6 +20,7 @@
         android:gravity="top|center_horizontal"
         android:scrollbars = "vertical"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:layout_below="@+id/textView6"
         android:paddingTop="15dp"
