@@ -23,6 +23,7 @@
         android:textSize="24sp"
         android:layout_below="@+id/tv_routeNumber"
         android:paddingTop="15dp"
+        android:textColor="@android:color/background_dark"
         android:paddingBottom="15dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -37,8 +38,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="43dp"
         android:contentDescription="Maus"
-        android:src="@drawable/mouse"
-        android:layout_marginEnd="20dp" />
+        android:src="@drawable/mouse" />
 
     <Button
         android:id="@+id/routeNext"
