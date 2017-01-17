@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
-
-import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -114,7 +112,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setRouteVariables();
             setTitleRoute("1");
             tv_route.setText(getString(R.string.route1));
-            imagezoom(R.drawable.steinbeil);
+            //            imagezoom(R.drawable.steinbeil);
             nextRoute = 20;
             //            curQuestion = 10;
             break;
@@ -124,7 +122,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             tv_route.setText(getString(R.string.route2));
             //            curQuestion = 20;
             setTitleRoute("2");
-            imagezoom(R.drawable.fastentuch);
+            //            imagezoom(R.drawable.fastentuch);
             nextRoute = 30;
             break;
          case 30:
@@ -133,7 +131,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             tv_route.setText(getString(R.string.route3));
             //            curQuestion = 30;
             setTitleRoute("3");
-            imagezoom(R.drawable.wand_alpabfahrtsherz);
+            //            imagezoom(R.drawable.wand_alpabfahrtsherz);
             nextRoute = 40;
             break;
          case 40:
@@ -142,7 +140,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             tv_route.setText(getString(R.string.route4));
             //            curQuestion = 40;
             setTitleRoute("4");
-            imagezoom(R.drawable.fuerst_johann);
+            //            imagezoom(R.drawable.fuerst_johann);
             nextRoute = 50;
             break;
          case 50:
@@ -159,7 +157,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             tv_route.setText(getString(R.string.route6));
             //            curQuestion = 60;
             setTitleRoute("6");
-            imagezoom(R.drawable.oberschenkelknochen);
+            //            imagezoom(R.drawable.oberschenkelknochen);
             nextRoute = 70;
             break;
          case 70:
@@ -168,7 +166,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             tv_route.setText(getString(R.string.route7));
             //            curQuestion = 70;
             setTitleRoute("7");
-            imagezoom(R.drawable.murmeltier);
+            //            imagezoom(R.drawable.murmeltier);
             nextRoute = 80;
             break;
          case 80:
@@ -706,6 +704,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 
    }
 
+
+   private void showAnswerDescription(int question, int answer){
+
+   }
+
+
+
+
    private void setTitleRoute(String Route){
       setTitle("Station " + Route);
    }
@@ -742,7 +748,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       routeNext.setOnClickListener(this);
       routeNext.setText("Weiter");
       tv_route = (TextView) findViewById(R.id.textView4);
-      tv_route.setMovementMethod(new ScrollingMovementMethod());
+      //      tv_route.setMovementMethod(new ScrollingMovementMethod());
       popupWindow = null;
    }
 

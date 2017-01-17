@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">FLMuseum</string>
+    <string name="app_name">LLM</string>
     <string name="mann">Forscher</string>
     <string name="frau">Forscherin</string>
+
+    <string name="welcome1">Hoi</string>
+    <string name="welcome2">Ich bin die Museumsmaus des Landesmuseums. Meist sieht man mich
+        natürlich nicht. Dir zeige ich aber meine sieben Lieblingsstücke im Museum. Komm mit!</string>
 
     <!-- Fragenüberschriften -->
     <string name="st1">Werkzeuge aus Stein</string>

@@ -54,7 +54,7 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
       buttonNext = (Button) findViewById(R.id.routeNext);
       buttonNext.setOnClickListener(this);
       TextView textView = (TextView) findViewById(R.id.textView4);
-      textView.setText("Hallo " + name);
+      textView.setText(getString(R.string.welcome1) + " " + name + "!\n\n" + getString(R.string.welcome2));
       state = 1;
 
    }

@@ -3,6 +3,7 @@ package li.uni.flmuseum;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,9 +14,9 @@ import java.util.ArrayList;
  */
 
 public class Results extends Activity {
-
    ListView listView;
    ArrayList<Boolean> mainQuestion;
+   TextView textView;
 
    boolean[] b_mainQuestion;
    String[] questionTitle;
@@ -24,13 +25,13 @@ public class Results extends Activity {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.act_results);
       listView = (ListView) findViewById(R.id.list);
+      textView = (TextView) findViewById(R.id.tv_results);
+      textView.setText(getString(R.string.route8));
 
       mainQuestion = new ArrayList<Boolean>();
 
-
       Bundle bundle = getIntent().getExtras();
       b_mainQuestion = bundle.getBooleanArray("main");
-
 
       for(int i = 0; i<b_mainQuestion.length; i++)
       {
