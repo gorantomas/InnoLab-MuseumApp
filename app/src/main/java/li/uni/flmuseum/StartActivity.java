@@ -1,6 +1,8 @@
 package li.uni.flmuseum;
 
 import android.app.Activity;
+
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -106,7 +108,7 @@ public class StartActivity extends Activity implements View.OnClickListener, Com
    }
 
    public void onFocusChange(View v, boolean hasFocus){
-      InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+      InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
       if(editTextName.hasFocus())
       {
          imm.showSoftInput(v, 0);

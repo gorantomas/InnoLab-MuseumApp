@@ -30,14 +30,15 @@
                 android:id="@+id/imageViewPopUp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="Popup Bild"
                 android:scaleType="fitCenter"/>
-<!--
-            <Button
-                android:id="@+id/dismiss"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Dismiss"/>
--->
+            <!--
+                        <Button
+                            android:id="@+id/dismiss"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dismiss"/>
+            -->
         </LinearLayout>
 
     </LinearLayout>

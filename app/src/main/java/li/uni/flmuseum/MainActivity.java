@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -740,6 +742,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       routeNext.setOnClickListener(this);
       routeNext.setText("Weiter");
       tv_route = (TextView) findViewById(R.id.textView4);
+      tv_route.setMovementMethod(new ScrollingMovementMethod());
       popupWindow = null;
    }
 

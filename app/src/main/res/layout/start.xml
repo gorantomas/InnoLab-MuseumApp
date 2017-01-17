@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:background="@drawable/schriftrolle"
               android:orientation="vertical"
               android:weightSum="1">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="211dp"
         android:gravity="center"
         android:text="Willkomen im\nLandesmuseum\nLiechtenstein"
         android:textSize="32sp"/>
@@ -18,11 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="186dp"
         android:layout_weight="0.63"
+        android:contentDescription="LLM Logo"
         android:src="@drawable/old_logo2"/>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="92dp"
+        android:layout_marginStart="25dp"
         android:layout_weight="0.06"
         android:orientation="vertical">
 
@@ -30,18 +33,22 @@
             android:id="@+id/checkBoxFemale"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
-            android:text="@string/frau"/>
+            android:text="@string/frau"
+            android:textSize="24sp"/>
 
         <RadioButton
             android:id="@+id/checkBoxMale"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
-            android:text="@string/mann"/>
+            android:text="@string/mann"
+            android:textSize="24sp"/>
     </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="25dp"
         android:orientation="horizontal">
 
         <TextView
@@ -68,15 +75,13 @@
         android:id="@+id/button_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/arrow_right"
         android:elevation="1dp"
         android:text="Los geht's"
-        android:background="@drawable/arrow_right"
         android:visibility="invisible"/>
 
 
