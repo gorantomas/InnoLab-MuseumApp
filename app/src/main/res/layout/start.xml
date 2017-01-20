@@ -9,13 +9,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="140dp"
-        android:gravity="center"
-        android:text="Willkomen im\nLiechtensteinischem\nLandesmuseum"
+
+        android:text="Willkommen im\nLiechtensteinischen\nLandesmuseum"
         android:textSize="32sp"
         android:textColor="@android:color/background_dark"
-        android:textStyle="normal|bold|italic" />
+        android:textStyle="normal|bold|italic"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
     <ImageView
         android:id="@+id/imageView"

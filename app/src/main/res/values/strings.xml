@@ -74,7 +74,8 @@
     <integer name="quest20rightanswer">1</integer>
     <string-array name="guest20explanation">
         <item name="explanation1">Richtig!\nDu kannst auch die Anfangsbuchstaben des Malers sehen: JGC für Johann Georg Clessin.</item>
-        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.\n\nDu kannst auch die
+            Anfangsbuchstaben des Malers sehen: JGC für Johann Georg Clessin.</item>
     </string-array>
 
     <string name="quest21">Das Tuch wurde früher während der Fastenzeit in der Kirche von Bendern
@@ -111,7 +112,8 @@
     </string-array>
     <integer name="quest23rightanswer">1</integer>
     <string-array name="guest23explanation">
-        <item name="explanation1">Falsch!\nZähl nochmals!</item>
+        <item name="explanation1">Falsch!\nZähl nochmals!\n\nDie obersten Bilder erzählen
+            Geschichten aus dem Alten Testament. Die Bilder in der zweiten, dritten und vierten Reihe erzählen von Jesus.</item>
         <item name="explanation2">Richtig!\nDie obersten Bilder erzählen Geschichten aus dem Alten Testament. Die Bilder in der zweiten, dritten und vierten Reihe erzählen von Jesus.</item>
     </string-array>
 
@@ -127,8 +129,9 @@
     </string-array>
     <integer name="quest30rightanswer">1</integer>
     <string-array name="guest30explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
-        <item name="explanation2">Richtig,\n nur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nNur die Kühe, die im
+            Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
+        <item name="explanation2">Richtig,\nnur die Kühe, die im Alpsommer am meisten Milch gegeben haben sind geschmückt!</item>
     </string-array>
 
     <string name="quest31">Ein ganz typischer Schmuck, den es so nur in Liechtenstein gibt, ist das Alpabfahrtsherz. Aus welchem Material ist es gemacht?</string>
@@ -139,9 +142,11 @@
     </string-array>
     <integer name="quest31rightanswer">1</integer>
     <string-array name="guest31explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nFrüher haben die Hirten die
+            Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
         <item name="explanation2">Richtig!\nFrüher haben die Hirten die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
-        <item name="explanation3">Falsch! \nchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.\n\nFrüher haben die Hirten
+            die Herzen sogar selber geschnitzt. Schau mal in die Vitrine an der Wand.</item>
     </string-array>
 
     <!--
@@ -180,9 +185,9 @@
     </string-array>
     <integer name="quest41rightanswer">1</integer>
     <string-array name="guest41explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\n1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
         <item name="explanation2">Richtig!\n1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
-        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.\n\n1699 kaufte er die Herrschaft Schellenberg, das heutige Unterland. Und 1712 kaufte er die Grafschaft Vaduz, das heutige Oberland.</item>
     </string-array>
 
     <string name="quest42">Was meinst du, lebten die Fürsten von Liechtenstein damals schon im
@@ -194,7 +199,7 @@
     </string-array>
     <integer name="quest42rightanswer">1</integer>
     <string-array name="guest42explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nErst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
         <item name="explanation2">Richtig!\nErst seit 1938 leben die Fürsten von Liechtenstein auf Schloss Vaduz. Willst du wissen warum, dann lies hier weiter.</item>
     </string-array>
 
@@ -225,8 +230,8 @@
     </string-array>
     <integer name="quest51rightanswer">1</integer>
     <string-array name="guest51explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
-        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nSchiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.\n\nSchiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
         <item name="explanation3">Richtig!\nSchiefer ist eine Gesteinsart, die über Jahrmillionen durch Wärme, Druck und Bewegung entstand. Schiefer wird im Bergbau gewonnen. Er lässt sich gut schneiden. Schiefer ist oft schwarz bis grau, mit etwas Glimmer.</item>
     </string-array>
 
@@ -242,9 +247,11 @@
     </string-array>
     <integer name="quest60rightanswer">1</integer>
     <string-array name="guest60explanation">
-        <item name="explanation1">Richtig,\n das ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
-        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
-        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Richtig,\ndas ist ein Oberschenkelknochen eines kleinen Sauriers!</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.\n\nDas ist ein
+            Oberschenkelknochen eines kleinen Sauriers!</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.\n\nDas ist ein
+            Oberschenkelknochen eines kleinen Sauriers!</item>
     </string-array>
 
     <string name="quest61">Neben dem Knochen siehst du ein Modell eines Nothosaurus. Was meinst
@@ -256,8 +263,10 @@
     </string-array>
     <integer name="quest61rightanswer">1</integer>
     <string-array name="guest61explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
-        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nDer Nothosaurus war zwar ein kleiner Saurier, aber
+            doch fast doppelt so gross wie das Modell.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.\n\nDer Nothosaurus war zwar ein kleiner Saurier, aber
+            doch fast doppelt so gross wie das Modell.</item>
         <item name="explanation3">Richtig!\nDer Nothosaurus war zwar ein kleiner Saurier, aber
             doch fast doppelt so gross wie das Modell.</item>
     </string-array>
@@ -274,10 +283,12 @@
     </string-array>
     <integer name="quest70rightanswer">1</integer>
     <string-array name="guest70explanation">
-        <item name="explanation1">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation1">Falsch!\nSchau nochmals gut hin.\n\nBeim Murmeltier-Skelett kannst du dies besonders gut
+            sehen.</item>
         <item name="explanation2">Richtig!\nBeim Murmeltier-Skelett kannst du dies besonders gut
             sehen.</item>
-        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.\n\nBeim Murmeltier-Skelett kannst du dies besonders gut
+            sehen.</item>
     </string-array>
 
 
@@ -290,8 +301,8 @@
     <integer name="quest71rightanswer">1</integer>
     <string-array name="guest71explanation">
         <item name="explanation1">Richtig!\nMurmeltiere machen fast 6 Monate lang Winterschlaf.</item>
-        <item name="explanation2">Falsch!\nSchau nochmals gut hin.</item>
-        <item name="explanation3">Falsch!\nSchau nochmals gut hin.</item>
+        <item name="explanation2">Falsch!\nSchau nochmals gut hin.\n\nMurmeltiere machen fast 6 Monate lang Winterschlaf.</item>
+        <item name="explanation3">Falsch!\nSchau nochmals gut hin.\n\nMurmeltiere machen fast 6 Monate lang Winterschlaf.</item>
     </string-array>
 
     <string name="quest72">Was machen Murmeltiere, wenn Gefahr droht?</string>

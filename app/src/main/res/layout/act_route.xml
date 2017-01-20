@@ -18,18 +18,19 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:gravity="top|center_horizontal"
         android:scrollbars = "vertical"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
         android:textSize="24sp"
         android:layout_below="@+id/tv_routeNumber"
         android:paddingTop="15dp"
+        android:background="@drawable/rounded_corner3"
         android:textColor="@android:color/background_dark"
         android:paddingBottom="15dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp" />
+        android:layout_marginStart="20dp"
+        android:gravity="center"/>
 
     <ImageView
         android:id="@+id/imageView3"

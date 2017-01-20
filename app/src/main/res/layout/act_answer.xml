@@ -20,8 +20,8 @@
         android:layout_below="@+id/tV_answerNumber"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_corner3"
         android:layout_marginStart="20dp"
-        android:gravity="top|center_horizontal"
         android:paddingBottom="15dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -29,7 +29,8 @@
         android:scrollbars="vertical"
         android:text="Hier steht die ausführliche Beschreibung wie die Station gefunden wird. "
         android:textColor="@android:color/background_dark"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:gravity="center"/>
 
     <ImageView
         android:id="@+id/imageView3"
