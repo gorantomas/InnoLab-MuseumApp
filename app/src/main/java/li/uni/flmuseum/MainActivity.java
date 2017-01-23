@@ -606,7 +606,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-            //            switchQuestion(nextQuestion);
             break;
          case 11:
             answers = getResources().getStringArray(R.array.guest11explanation);
@@ -619,7 +618,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchRoute(nextRoute);
             break;
          case 20:
             answers = getResources().getStringArray(R.array.guest20explanation);
@@ -632,7 +630,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 21:
             answers = getResources().getStringArray(R.array.guest21explanation);
@@ -645,54 +642,52 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 22:
             answers = getResources().getStringArray(R.array.guest22explanation);
             if(radioButtons[0].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
+               answer = 0;
             }
-//            switchQuestion(nextQuestion);
+            else if(radioButtons[1].isChecked())
+               answer = 1;
             break;
          case 23:
             answers = getResources().getStringArray(R.array.guest23explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchRoute(nextRoute);
             break;
          case 30:
             answers = getResources().getStringArray(R.array.guest30explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 31:
             answers = getResources().getStringArray(R.array.guest31explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchRoute(nextRoute);
             break;
 
          case 40:
@@ -700,60 +695,62 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             if(radioButtons[0].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
+               answer = 0;
             }
-//            switchQuestion(nextQuestion);
+            else if(radioButtons[1].isChecked())
+            {
+               answer = 1;
+            }
+            else if(radioButtons[2].isChecked())
+               answer = 2;
             break;
          case 41:
             answers = getResources().getStringArray(R.array.guest41explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 42:
             answers = getResources().getStringArray(R.array.guest42explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchRoute(nextRoute);
             break;
          case 50:
             answers = getResources().getStringArray(R.array.guest50explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 1;
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 51:
             answers = getResources().getStringArray(R.array.guest51explanation);
             if(radioButtons[0].isChecked())
                answer = 0;
-            if(radioButtons[1].isChecked())
+            else if(radioButtons[1].isChecked())
                answer = 1;
             else if(radioButtons[2].isChecked())
             {
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-//            switchRoute(nextRoute);
             break;
          case 60:
             answers = getResources().getStringArray(R.array.guest60explanation);
@@ -766,7 +763,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 61:
             answers = getResources().getStringArray(R.array.guest61explanation);
@@ -779,7 +775,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-//            switchRoute(nextRoute);
             break;
          case 70:
             answers = getResources().getStringArray(R.array.guest70explanation);
@@ -792,7 +787,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 71:
             answers = getResources().getStringArray(R.array.guest71explanation);
@@ -805,7 +799,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                answer = 1;
             else if(radioButtons[2].isChecked())
                answer = 2;
-//            switchQuestion(nextQuestion);
             break;
          case 72:
             answers = getResources().getStringArray(R.array.guest72explanation);
@@ -821,7 +814,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
                b_mainQuestion[tempQuestionCounter] = true;
                answer = 2;
             }
-//            switchRoute(nextRoute);
             break;
 
          default:
@@ -838,93 +830,57 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       switch(currentQuestion)
       {
          case 10:
-            //            answers = getResources().getStringArray(R.array.guest10explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 11:
-            //            answers = getResources().getStringArray(R.array.guest11explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 20:
-            //            answers = getResources().getStringArray(R.array.guest20explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 21:
-            //            answers = getResources().getStringArray(R.array.guest21explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 22:
-            //            answers = getResources().getStringArray(R.array.guest22explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 23:
-            //            answers = getResources().getStringArray(R.array.guest23explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 30:
-            //            answers = getResources().getStringArray(R.array.guest30explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 31:
-            //            answers = getResources().getStringArray(R.array.guest31explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 40:
-            //            answers = getResources().getStringArray(R.array.guest40explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 41:
-            //            answers = getResources().getStringArray(R.array.guest41explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 42:
-            //            answers = getResources().getStringArray(R.array.guest42explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 50:
-            //            answers = getResources().getStringArray(R.array.guest50explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 51:
-            //            answers = getResources().getStringArray(R.array.guest51explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 60:
-            //            answers = getResources().getStringArray(R.array.guest60explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 61:
-            //            answers = getResources().getStringArray(R.array.guest61explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
          case 70:
-            //            answers = getResources().getStringArray(R.array.guest70explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 71:
-            //            answers = getResources().getStringArray(R.array.guest71explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchQuestion(nextQuestion);
             break;
          case 72:
-            //            answers = getResources().getStringArray(R.array.guest72explanation);
-            //            tv_answerNext.setText(answers[answer]);
             switchRoute(nextRoute);
             break;
 
@@ -973,7 +929,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
       routeNext.setOnClickListener(this);
       routeNext.setText("Weiter");
       tv_route = (TextView) findViewById(R.id.textView4);
-      //      tv_route.setMovementMethod(new ScrollingMovementMethod());
       popupWindow = null;
       tv_routerNumber = (TextView) findViewById(R.id.tv_routeNumber);
    }
