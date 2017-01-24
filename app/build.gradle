@@ -51,7 +51,7 @@ android {
     }
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            def project = "FLMuseum"
+            def project = "LLM"
             def SEP = "_"
             def flavor = variant.productFlavors[0].name
             def buildType = variant.variantData.variantConfiguration.buildType.name
