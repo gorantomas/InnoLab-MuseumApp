@@ -23,6 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
    PopupWindow popupWindow;
    private boolean zoomOut = false;
    boolean actScreenRoute = false;
+   boolean pictureOpen = false;
    boolean[] b_mainQuestion;
    int curQuestion = -1;
    int nextQuestion = -1;
@@ -74,7 +75,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             View popupView = layoutInflater.inflate(R.layout.popup, null);
             ImageView imgDismiss = (ImageView) popupView.findViewById(R.id.imageViewPopUp);
             imgDismiss.setImageResource(Resource);
-            //                imgDismiss.setImageResource(R.drawable.imgzweiterstock);
+
             popupWindow = new PopupWindow(popupView, LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 
             //                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss);
@@ -89,13 +90,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             imgDismiss.setOnClickListener(new Button.OnClickListener() {
 
                @Override public void onClick(View v){
-                  // TODO Auto-generated method stub
+                  pictureOpen = false;
                   popupWindow.dismiss();
                }
             });
 
             //                popupWindow.showAsDropDown(btnOpenPopup, 50, -30);
-            popupWindow.showAtLocation(btnOpenPopup, Gravity.CENTER, 0, 0);
+            pictureOpen = true;
+            popupWindow.showAtLocation(btnOpenPopup, Gravity.BOTTOM, 0, 0);
          }
       });
 
@@ -114,43 +116,33 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             setRouteVariables();
             setTitleRoute("1");
             tv_route.setText(getString(R.string.route1));
-            //            imagezoom(R.drawable.steinbeil);
             nextRoute = 20;
-            //            curQuestion = 10;
             break;
          case 20:
             lastRoute = 10;
             setRouteVariables();
             tv_route.setText(getString(R.string.route2));
-            //            curQuestion = 20;
             setTitleRoute("2");
-            //            imagezoom(R.drawable.fastentuch);
             nextRoute = 30;
             break;
          case 30:
             lastRoute = 20;
             setRouteVariables();
             tv_route.setText(getString(R.string.route3));
-            //            curQuestion = 30;
             setTitleRoute("3");
-            //            imagezoom(R.drawable.wand_alpabfahrtsherz);
             nextRoute = 40;
             break;
          case 40:
             lastRoute = 30;
             setRouteVariables();
             tv_route.setText(getString(R.string.route4));
-            //            curQuestion = 40;
             setTitleRoute("4");
-            //            imagezoom(R.drawable.fuerst_johann);
             nextRoute = 50;
             break;
          case 50:
             lastRoute = 40;
             setRouteVariables();
             tv_route.setText(getString(R.string.route5));
-            //            curQuestion = 50;
-            //            imagezoom(R.drawable.schifertafel);
             setTitleRoute("5");
             nextRoute = 60;
             break;
@@ -158,25 +150,20 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             lastRoute = 50;
             setRouteVariables();
             tv_route.setText(getString(R.string.route6));
-            //            curQuestion = 60;
             setTitleRoute("6");
-            //            imagezoom(R.drawable.oberschenkelknochen);
             nextRoute = 70;
             break;
          case 70:
             lastRoute = 60;
             setRouteVariables();
             tv_route.setText(getString(R.string.route7));
-            //            curQuestion = 70;
             setTitleRoute("7");
-            //            imagezoom(R.drawable.murmeltier);
             nextRoute = 80;
             break;
          case 80:
             lastRoute = 70;
             setRouteVariables();
             tv_route.setText(getString(R.string.route8));
-            //            curQuestion = 80;
             setTitleRoute("8");
             nextRoute = -1;
             break;
@@ -222,7 +209,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
             }
             if(answ[2].equals("xxx"))
                radioButtons[2].setVisibility(View.INVISIBLE);
-
             break;
          case 11:
             lastQuestion = 10;
@@ -539,7 +525,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 
    public void onBackPressed(){
       // falsche Frage wird als nächstes angezeigt. Man kann nur 1x zurück
-      if(!actScreenRoute && !radioButtons[0].isChecked() && !radioButtons[1].isChecked() && !radioButtons[2].isChecked())
+      if(!actScreenRoute && !radioButtons[0].isChecked() && !radioButtons[1].isChecked() && !radioButtons[2].isChecked() && !pictureOpen)
       {
          if(curQuestion == 10 || curQuestion == 20 || curQuestion == 30 ||
               curQuestion == 40 || curQuestion == 50 || curQuestion == 60 || curQuestion == 70)
